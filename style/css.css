@@ -171,7 +171,6 @@ a:hover { text-decoration:none; }
 	width:181px;
 	position:absolute;
 	bottom:-505px;
-	-overflow:hidden;
 	z-index:999;
 	}	
 .nav_Nav{
@@ -225,20 +224,36 @@ a:hover { text-decoration:none; }
 .listBox{
 	position:absolute;
 	top:0px;
-	left:177px;
+	left:175px;
 	width:730px;
 	height:450px;
 	background:#fff;
 	display:none;
-	z-index:100;
+	z-index:1000;
 	padding:20px;
 	}
-.fore1{ clear:both;}
-.item .fore1 dt a{ font-weight:bolder; color:#666; height:36px; line-height:36px; padding:0 10px;}
+.item .fore1 dt a{ font-weight:bolder; color:#666; height:2em; line-height: 2em; padding:0 10px;}
 .item .fore1 dt a:hover{ color:#C81623;}
-.item .fore1 dd a{ color:#666; padding:0px 10px; font-size:12px; height:36px; line-height:36px; border-left:1px solid #e0e0e0;}
-.fore1 dd{ border-bottom:1px solid #e0e0e0;}
-.fore1 dt{ float:left;}
+.item .fore1 dd a{  
+				float: left;
+				padding: 0 8px;
+				margin: 4px 0;
+				line-height: 2em;
+				border-left: 1px solid #e0e0e0;
+				white-space: nowrap;}
+				
+.fore1 dl{  width: 100%;
+			overflow: hidden;
+			clear:both;
+			display:block;
+			}
+.fore1 dt{
+	position:relative;
+	float:left;
+	width:70px;
+	}
+.fore1 dd{ border-bottom:1px solid #e0e0e0; float:left; width:620px;}
+
 	
 /*slider*/
 
