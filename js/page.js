@@ -59,15 +59,30 @@ $.fn.slide = function(){
 			$('.aboutBox').css("display","none");
 			$('.aboutBox').eq($(this).index()).css("display","block");
 			});	
-	$('.aboutLB_list li').mouseover(function (){
-		$('.aboutLB_list li div').stop().animate({bottom:"100%",opacity:0});
-		$('.aboutLB_list li div').eq($(this).index()).stop().animate({bottom:"0px",opacity:1});
-	});
-	$(".zlhb div").mouseover(function (){
-		$(".zlhb div span").stop().animate({bottom:"-100%",opacity:0});
-		$(".zlhb div span").eq($(this).index()).stop().animate({bottom:"0px",opacity:0.5});
-	});
+	//MouseOver_blue
+			
+	var now = 0;
 	
+	$('.aboutLB_list li').mouseover(function(){
+		now = $(this).index();
+		tab();
+		})
+	function tab(){
+		$('.aboutLB_list li div').stop().animate({bottom:"100%",opacity:0});
+		$('.aboutLB_list li div').eq(now).stop().animate({bottom:"0px",opacity:1});
+		}
+	function next(){
+		now++;
+		now%=$('.aboutLB_list li').length;
+		tab();
+		}
+	var timer = setInterval(next,2000);
+	$('.aboutLB_list').mouseover(function(){
+		clearInterval(timer)
+		})
+	$('.aboutLB_list').mouseout(function(){
+		timer = setInterval(next,2000);
+		})
 	
 //2
 
