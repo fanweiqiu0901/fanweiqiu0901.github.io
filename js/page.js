@@ -83,6 +83,11 @@ $.fn.slide = function(){
 	$('.aboutLB_list').mouseout(function(){
 		timer = setInterval(next,2000);
 		})
+		
+	$(".zlhb div").mouseover(function (){
+		$(".zlhb div span").stop().animate({bottom:"-100%",opacity:0});
+		$(".zlhb div span").eq($(this).index()).stop().animate({bottom:"0px",opacity:0.5});
+	});
 	
 //2
 
