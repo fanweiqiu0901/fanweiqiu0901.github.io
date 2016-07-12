@@ -76,10 +76,10 @@ img{ border:none;}
 .aboutLB_text p{ line-height:31px; margin-bottom:31px; text-indent:2em;}
 .aboutLB_text img{ float:right; margin:50px 0px 60px 30px;}
 .logo_text_c{ width:100%; margin:0 auto 100px;}
-.logo_text_c img.f_right{ margin-left:10%;}
-.logo_img{ display:block; margin:30px auto;}
-.title_red{ margin-top:120px; margin-bottom:40px; color:#e60012; font-size:18px; font-weight:400; line-height:31px;}
-.logo_text_c p{ line-height:31px;margin-bottom:39px;}
+.logo_text_c img.f_right{ margin-left:10%; margin-right:5%;}
+.logo_img{ display:block; margin:100px auto 0px;}
+.title_red{ margin-top:50px; margin-bottom:30px; color:#e60012; font-size:18px; font-weight:400; line-height:31px;}
+.logo_text_c p{ line-height:31px;margin-bottom:25px;}
 .logo_text_c h4{ font-size:18px; font-weight:400; margin:37px 0px;}
 .img_left{ float:left;}
 .img_right{ float:right;}
