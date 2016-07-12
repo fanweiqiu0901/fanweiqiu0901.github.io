@@ -185,9 +185,9 @@ transition:background 0.5s;
 /* foot */
 .bg_blue{ background:#015b8b; padding:40px 0px;}
 .footer_nav dl{width:14%; color:#fff; display:block; float:left; min-height:230px;}
-.footer_nav dl dt{ font-size:17px; height:41px; line-height:41px;}
-.footer_nav dl dd a{ color:#6eaec1; font-size:16px; height:22px; line-height:22px;}
-.footer_nav dl dd a:hover{ color:#6eaec1;}
+.footer_nav dl dt{ font-size:18px; height:27px; line-height:27px;}
+.footer_nav dl dd a{ color:#75b3c5; font-size:14px; height:24px; line-height:24px;}
+.footer_nav dl dd a:hover{ text-decoration:underline;}
 .bg_gray{ background:#7c7c7c; border-bottom:3px solid #c0c2cc; padding:20px 0px;}
 .company li{ color:#bcbcbc; font-size:13px; line-height:22px;}
 .company li h3{ color:#d3d3d3; font-size:17px; padding-bottom:10px;}
