@@ -118,7 +118,7 @@ img{ border:none;}
 .ptry ul{ padding:30px 0px; margin:auto;}
 .ptry  li{ float:left;min-height:51px;}
 .ptry  li.time{ font-size:18px; color:#e60012; width:120px; line-height:50px;}
-.ptry  li.text{ padding-left:120px; min-width:600px; background:url(../images/line_ico.png) no-repeat 9px 11px; font-size:14px; line-height:30px;}
+.ptry  li.text{ padding-left:120px; min-width:600px; background:url(../images/line_ico.png) no-repeat 12px 11px; font-size:14px; line-height:30px;}
 /*     p2    */
 /*     p2   新闻中心  */
 .news_title{ margin-top:40px; border-bottom:1px solid #7c7c7c; padding-bottom:20px;}
