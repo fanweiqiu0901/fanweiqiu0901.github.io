@@ -173,7 +173,7 @@ transition:background 0.5s;
 -o-transition:background 0.5s; /* Opera */}
 .pt .active .text_right h1,.pt .active .text_right p{color:#333;}
 .LB_list img{ margin:50px 100px; float:left;}
-.LB_list .text_right{ padding:50px 30px; }
+.LB_list .text_right{ padding:50px 30px 50px 360px; }
 .LB_list .text_right span{ font-size:16px; font-family:Arial; padding:0px 15px; font-family:"微软雅黑","Microsoft Yahei"}
 .LB_list .text_right p{line-height:24px; padding-top:20px; color:#666;}
 .line{ margin:5px 0px; height:1px; background:#7c7c7c; width:100%;}
