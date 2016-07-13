@@ -55,6 +55,10 @@ img{ border:none;}
 .news_center{ background:url(../images/banner_newsCenter.png) no-repeat center top;}
 /*     p3   BIM平台  */
 .BIM_PT{ background:url(../images/banner_BIM_PT.png) no-repeat center top;}
+/*     P4   BIM方案  */
+.BIM_FA{ background:url(../images/banner_BIM_FA.png) no-repeat center top;}
+/*     P5   加入我们  */
+.join_us{ background:url(../images/banner_jionus.png) no-repeat center top;}
 
 .banner_title{ height:100%; position:relative;}
 .banner_title img{ position:absolute; bottom:0px; left:10px;}
@@ -177,9 +181,25 @@ transition:background 0.5s;
 .LB_list .text_right span{ font-size:16px; font-family:Arial; padding:0px 15px; font-family:"微软雅黑","Microsoft Yahei"}
 .LB_list .text_right p{line-height:24px; padding-top:20px; color:#666;}
 .line{ margin:5px 0px; height:1px; background:#7c7c7c; width:100%;}
+/**bim方案**/
+.yzfBox{ width:90%; margin:78px auto;}
+.yzfBox img{ display:block; margin:60px auto;}
+.yzfBox ul{ margin:50px 0px;}
+.yzfBox li{ background:#fff; margin-bottom:33px;}
+.yzfBox li .text{ background:#d9d9d9; padding:50px 0px 30px 60px;}
+.yzfBox li img{ margin:0px; padding-left:60px; float:right;}
+.yzfBox li h1{ margin-bottom:40px;}
+.yzfBox li p{ line-height:22px;}
+.yzfBox dt{ height:60px; line-height:60px;}
+.yzfBox dd a{ height:50px; line-height:50px;}
+.yzfBox dd a:hover{ text-decoration:underline; color:#c00;}
 
-
-
+/*join us*/
+table{border-collapse:collapse; font-size:16px;}
+.joinus{ width:100%;}
+.joinus thead{ background:#015b8b; height:80px; line-height:80px; color:#fff;}
+.joinus td{ width:20%; line-height:70px; height:70px; text-align: center;border-bottom:1px dashed #a7a7a7;}
+.joinus td a:hover{ color:#015b8b; text-decoration:underline;}
 
 
 /* foot */
