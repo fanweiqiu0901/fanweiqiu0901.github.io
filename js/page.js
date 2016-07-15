@@ -124,6 +124,19 @@ $('.LB_list').each(function(index, element){
 		$('.pt').css("display","none");
 		$('.pt').eq($(this).index()).css("display","block");
 		})
-	
+	var aAppSpan=document.getElementById('appTabHeader').children;
+		var aAppList=document.getElementById('appTabBody').children;
+
+		for(var i=0;i<aAppSpan.length;i++ ){
+			aAppSpan[i].index=i;
+			aAppSpan[i].onclick=function(){
+				for(var j=0;j<aAppSpan.length;j++){
+					aAppSpan[j].className='';
+					aAppList[j].className='';
+				}
+				this.className='cur';
+				aAppList[this.index].className='on';
+			}
+		}
 	
 	

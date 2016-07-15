@@ -256,6 +256,43 @@ table{border-collapse:collapse; font-size:16px;}
 .borderB img{ display:block; margin:40px auto;}
 .logoImg{ padding-left:70px; background:url(../images/logoLuban%20Management%20Cockpit.png) no-repeat 0px 40px;}
 .ys img{ display:block; margin:40px auto;}
+/*BIM yinyong*/
+.container1170{min-width:1170px;margin:0 auto;width:60%;}
+.container1170 video{background:url(../images/vedio_bg.jpg);clear:both;display:block;margin:auto}
+.tabContainer{padding-top:88px;overflow:hidden;}
+.appTabHeader .cur{border-top:12px solid #c00000;}
+.appTabHeader {height:50px;}
+.appTabHeader p{width:110%;border-top:1px solid #000000;height:50px;padding-left:64px;}
+.appTabHeader span{float:left;height:46px;line-height:46px;font-size:18px;display:inline-block;border-top:12px solid transparent;margin-top:-6px;margin-right:230px;}
+.appTabBody>li{display:none;}
+.appTabBody>li.on{display:block;}
+.appTabBody_details{padding-top:42px;}
+.appTabBody_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
+.appTabBody_details h4{font-size:18px;height:30px;color:#333333;}
+.appTabBody_details p{font-size:14px;line-height:24px;color:#333333;}
+.appTabBody_details img{clear:both;display:block;margin:auto;margin-top: 34px;}
+.leftRight{overflow: hidden;width:100%;}
+.leftRight img{clear:none;}
+.leftRightW1050{overflow: hidden;width:1050px;margin:auto}
+.leftRightW1050 img{clear:none;}
+.appTabBody_details li.noBorder{border-bottom:0;}
+.appDownload{text-decoration:underline;color:#c00000;font-size:14px;line-height:24px;}
+/*BIM tujian*/
+.tujian_details video{background:url(../images/vedio_bg.jpg);clear:both;display:block;margin:auto;}
+p.marginBtm34{margin-bottom: 34px;}
+.tujian_details{padding-top:42px;}
+.tujian_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
+.tujian_details h4{font-size:18px;height:30px;color:#333333;}
+.tujian_details p{font-size:14px;line-height:24px;color:#333333;}
+.tujian_details img{clear:both;display:block;margin:auto;margin-top: 34px;}
+.leftRight{overflow: hidden;width:100%;}
+.leftRight img{clear:none;}
+.leftRightW1050{overflow: hidden;width:1050px;margin:auto}
+.leftRightW1050 img{clear:none;}
+.tujian_details li.noBorder{border-bottom:0;}
+.loadAndRefresh{overflow:hidden;}
+.loadAndRefresh div{float:left;}
+.marginL48{margin-left: 48px;}
 /* foot */
 .bg_blue{ background:#015b8b; padding:40px 0px;}
 .footer_nav dl{width:14%; color:#fff; display:block; float:left; min-height:230px;}
