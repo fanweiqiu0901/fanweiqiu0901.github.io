@@ -13,7 +13,7 @@ img{ border:none;}
 .w_1360{ width:74%; min-width:1200px; max-width:2000px; margin:0 auto;}
 .fl { float: left; }
 .fr { float: right;}
-
+h3{ font-size:18px; height:33px; line-height:33px; margin-top:30px;}
 /*nav*/
 .navBar{width:100%;height:172px;background:white;}
 .navBar-top{height:24px;background:#c00000;color:white;line-height:24px;}
@@ -162,15 +162,19 @@ div.active{ display:block;}
 .page a:hover{ color:#89c3d0;}
 /*     p3   BIM平台  */
 /* content  */
-.LBPT_nav{ padding:60px 10px 100px; min-height:140px; position:relative;}
-.LBPT_nav ul{ border-bottom:1px solid #7c7c7c;}
-.LBPT_nav ul li{ float:left; padding:10px 20px; font-size:16px; font-weight:bold; line-height:50px;}
-.LBPT_nav ul li span{ height:2px; background:red; width:0px; display:block;}
-.LBPT_nav ul li ul{ display:none; position:absolute; min-width:100px; bottom:30px;}
-.LBPT_nav ul li ul li{ float:left; padding:10px 20px;}
-.LBPT_nav ul li ul li a{ color:#000; width:100px;}
+.LBPT_nav{ padding:0px 10px; min-height:140px; position:relative;}
+.LBPT_nav ul{ border-bottom:1px solid #7c7c7c; padding:42px 0px; margin-bottom:100px;}
+.LBPT_nav ul li{ float:left; margin: 0px 14px;}
+.LBPT_nav ul li a{ height: 34px;line-height: 34px; padding: 0px 10px;display: block;font-size: 18px;font-weight: bold;}
+.LBPT_nav ul li.active a,.LBPT_nav ul li a:hover{ background:#c00; color:#fff;}
+.LBPT_nav ul li ul{ display:none; position:absolute; min-width:100px; bottom:-100px; border-bottom:0px;}
+.LBPT_nav ul li ul li{ float:left; margin:0px; }
+.LBPT_nav ul li ul li a{ color:#000; font-size:16px; font-weight:normal;}
+.LBPT_nav ul li.active ul li a,.LBPT_nav ul li ul li a:hover,.LBPT_nav ul li.active ul li a:hover{ background:none; color:#000;}
+.LBPT_nav ul li ul li a span{ display:block; width:0%;background:#c00;height:3px;transition:1s all ease;}
+.LBPT_nav ul li ul li a:hover span{transition:1s all ease; width:100%;}
 .LBPT_nav ul li ul.active{ display:block;}
-.pt .LB_list{ height:212px; overflow:hidden;}
+.pt .LB_list{ height:212px; overflow:hidden; border:0px;}
 .pt .active{ background:#ccc;
 transition:background 0.5s;
 -moz-transition:background 0.5s; /* Firefox 4 */
@@ -246,8 +250,12 @@ table{border-collapse:collapse; font-size:16px;}
 .contactMethod h4{margin-bottom: 8px;}
 .contactMethod a{text-align: right;display:block;}
 .contactMethod .back span{background: url(../images/back.png) no-repeat;width:16px;height:13px;display:inline-block;}
-
-
+/* BIM 平台*/
+.w_1176{ width:1176px; margin:0 auto 60px; display:none;}
+.borderB{ border-bottom:1px solid #000; padding:30px 0px;}
+.borderB img{ display:block; margin:40px auto;}
+.logoImg{ padding-left:70px; background:url(../images/logoLuban%20Management%20Cockpit.png) no-repeat 0px 40px;}
+.ys img{ display:block; margin:40px auto;}
 /* foot */
 .bg_blue{ background:#015b8b; padding:40px 0px;}
 .footer_nav dl{width:14%; color:#fff; display:block; float:left; min-height:230px;}

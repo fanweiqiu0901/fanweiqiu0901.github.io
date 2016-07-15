@@ -114,9 +114,16 @@ $('.LB_list').each(function(index, element){
 			});
 		})
 
-	$('.LBPT_nav ul li').mouseover(function (){
-		$('.LBPT_nav ul li ul').hide();
+	$('.LBPT_nav ul li').mouseover(function(){
+		$('.LBPT_nav ul li').find("ul").hide();
 		$(this).find($("ul")).show();
-		$('.LBPT_nav ul li span').stop().animate({width:"0"});
-		$('.LBPT_nav ul li span').eq($(this).index()).stop().animate({width:"100%"});
-	});	
+		})
+	
+		
+	$(".LBPT_nav ul li.active ul li").click(function(){
+		$('.pt').css("display","none");
+		$('.pt').eq($(this).index()).css("display","block");
+		})
+	
+	
+	
