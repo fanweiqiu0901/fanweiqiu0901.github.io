@@ -137,7 +137,7 @@ div.active{ display:block;}
 .news_scrollImg ul{ position:absolute; left:0px; top:0px;}
 .news_scrollImg ul li{ height:325px; float:left; padding:50px 30px; overflow:hidden;}
 .news_scrollImg ul li a{ color:#000;}
-.news_scrollImg ul li .text{ float:left; width:50%; padding:20px 30px 20px 0px;}
+.news_scrollImg ul li .text{ float:left; width:40%; padding:20px 30px 20px 0px;}
 .news_scrollImg ul li .text p{ height:80px; overflow:hidden;}
 .news_scrollImg ul li a h1{ font-weight:bold; padding-bottom:10px;}
 .news_scrollImg ul li a h4{ padding-bottom:20px;}
