@@ -59,6 +59,8 @@ h3{ font-size:18px; height:33px; line-height:33px; margin-top:30px;}
 .BIM_FA{ background:url(../images/banner_BIM_FA.png) no-repeat center top;}
 /*     P5   加入我们  */
 .join_us{ background:url(../images/banner_jionus.png) no-repeat center top;}
+/*     P6  下载中心  */
+.download{ background:url(../images/banner_download.png) no-repeat center top;}
 
 .banner_title{ height:100%; position:relative;}
 .banner_title img{ position:absolute; bottom:0px; left:10px;}
@@ -278,21 +280,49 @@ table{border-collapse:collapse; font-size:16px;}
 .appTabBody_details li.noBorder{border-bottom:0;}
 .appDownload{text-decoration:underline;color:#c00000;font-size:14px;line-height:24px;}
 /*BIM tujian*/
-.tujian_details video{background:url(../images/vedio_bg.jpg);clear:both;display:block;margin:auto;}
 p.marginBtm34{margin-bottom: 34px;}
-.tujian_details{padding-top:42px;}
-.tujian_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
-.tujian_details h4{font-size:18px;height:30px;color:#333333;}
-.tujian_details p{font-size:14px;line-height:24px;color:#333333;}
-.tujian_details img{clear:both;display:block;margin:auto;margin-top: 34px;}
+.tujianTabBody{padding-top:42px;}
+.tujianTabBody_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
+.tujianTabBody h4{font-size:18px;height:30px;color:#333333;}
+.tujianTabBody p{font-size:14px;line-height:24px;color:#333333;}
+.tujianTabBody img{clear:both;display:block;margin:auto;margin-top: 34px;}
 .leftRight{overflow: hidden;width:100%;}
 .leftRight img{clear:none;}
 .leftRightW1050{overflow: hidden;width:1050px;margin:auto}
 .leftRightW1050 img{clear:none;}
-.tujian_details li.noBorder{border-bottom:0;}
+.tujianTabBody_details li.noBorder{border-bottom:0;}
 .loadAndRefresh{overflow:hidden;}
 .loadAndRefresh div{float:left;}
 .marginL48{margin-left: 48px;}
+.tujianContainer{padding-top:88px;overflow:hidden;}
+.tujianTabHeader .cur{border-top:12px solid #c00000;}
+.tujianTabHeader {height:50px;}
+.tujianTabHeader p{width:110%;border-top:1px solid #000000;height:50px;padding-left:64px;}
+.tujianTabHeader span{float:left;height:46px;line-height:46px;font-size:18px;display:inline-block;border-top:12px solid transparent;margin-top:-6px;margin-right:230px;cursor:pointer;}
+.tujianTabBody>li{display:none;}
+.tujianTabBody>li.on{display:block;}
+/*  下载中心*/
+.downLoad{ font-size:18px; color:#333;}
+.downLoad li{ width:312px; margin:15px; border:3px solid #015b8b; height:312px; overflow:hidden; float:left; padding:10px;}
+.downLoad a{ line-height:40px; color:#c00; text-decoration:underline; font-size:16px; margin:0px;}
+.BIMgd button,.downLoad button{ width:100px; line-height:40px; height:40px; background:#c00; color:#fff; font-size:16px; border:0px; font-family:"微软雅黑";}
+.downLoad p{ height:120px;}
+.downLoad div{ height:40px; line-height:40px;}
+.txt_m{ text-align:center;}
+.txt_t{ margin-top:30px;}
+.img_c{ display:block; margin:10px auto;}
+.downLoad h3{ margin:0px;}
+.downLoad div.txt_h{ height:200px; margin-top:14px;}
+.downLoad div.txt_h span{ line-height:27px;}
+.downLoad span{ display:block; font-size:14px;}
+.txt_f16{ font-size:16px; width:840px; margin:10px auto 20px;}
+.txt_f16 a{ color:#0415fb; text-decoration:underline;}
+.BIMgd{ width:1077px; margin:0 auto;}
+.gd{ border:3px solid #015b8b; padding:18px 20px; margin-bottom:30px;}
+.gd h5{ font-size:24px; margin-bottom:45px;}
+.gd p{ line-height:23px; height:120px; overflow:hidden;}
+.gd a{ color:#c00; font-size:16px; text-decoration:underline; margin:0px 10px; padding-top:20px;}
+.BIMgd .txt_gd{ font-size:16px; line-height:40px; margin:0px 20px;}
 /* foot */
 .bg_blue{ background:#015b8b; padding:40px 0px;}
 .footer_nav dl{width:14%; color:#fff; display:block; float:left; min-height:230px;}
