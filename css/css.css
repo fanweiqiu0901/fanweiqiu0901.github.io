@@ -115,7 +115,7 @@ ul.listNav li.active a{ background:#ce3d3a; color:#fff;}
 /*企业文化*/
 .cultureBox{ border-left:6px solid #ce3d3a; height:136px; width:538px; background:#ededed; margin:40px 0px 0px; padding:18px 20px; overflow:hidden; line-height:17px;}
 .cultureBox b{ min-width:70px; display:inline-block;}
-.kw5 span{ padding-right:20px; font-size:18px; border-bottom:1px solid #ce3d3a; margin-right:65px;}
+.kw5 span{ padding:0px 10px; font-size:18px; border-bottom:1px solid #ce3d3a; margin-right:65px;}
 .kw5{margin:35px 0px 45px}
 /*联系我们*/
 dl.contact{ font-size:18px; margin-bottom:25px;}
@@ -317,14 +317,13 @@ p.marginBtm34{margin-bottom: 34px;}
 .tujianTabBody>li.on{display:block;}
 /*  下载中心*/
 .downLoadBox{ width:347px; height:245px; overflow:hidden; position:relative; border:1px solid #ddd; border-top:6px solid #ce3d3a; padding:20px 30px; float:left; margin-right:19px; margin-bottom:20px;}
-.downLoadB{ background:#ddd; height:75px; position:absolute;bottom:0px; width:100%; left:0px;}
+.downLoadB{ background:#ddd; height:55px; position:absolute;bottom:0px; width:100%; left:0px;}
 .downLoadB span{ font-size:16px;}
-.downLoadB span a{margin:0px; height:75px; line-height:75px; padding:0px 30px;display:block; width:100%;}
+.downLoadB span a{margin:0px; height:55px; line-height:55px; padding:0px 30px;display:block; width:100%;}
 .addmore{ clear:both; display:block; height:50px; background:#ddd url(../images/look1.png) no-repeat center top; margin-right:20px;}
 .addmore:hover{background:#ce3d3a url(../images/look2.png) no-repeat center top;}
 .downLoadTitle{ font-size:16px; font-weight:bold; line-height:30px;}
 .gd_1100{ width:100%; margin:0px 0px 30px; height:245px;}
-.gd_1100 downLoadB{ height:67px;}
 .textCenter p{ margin:6px;}
 .centerText{ width:844px; margin:0 auto;}
 .centerText span{ text-align: left; font-size:16px; display:block;}
