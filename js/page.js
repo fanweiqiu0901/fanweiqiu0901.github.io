@@ -71,10 +71,3 @@ $(".addmore").click(function(){
 	})
 
 
-
-
-
-
-
-
-

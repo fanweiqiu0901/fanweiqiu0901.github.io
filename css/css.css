@@ -98,7 +98,9 @@ img{ border:none;}
 
 /**字体样式**/
 h3{ font-size:18px; height:18px; line-height:18px;}
+h4{ font-size:16px; height:16px; line-height:16px;}
 .textRed{color:#ce3d3a;}
+.textWhite{color:#fff;}
 .textCenter{ text-align:center; clear:both;}
 .textBlue{ color:#477aac; font-size:18px; text-decoration:underline; display:block; margin-top:30px;}
 .imgCenter{ display:block; margin:20px auto;}
@@ -107,11 +109,15 @@ ul.listNav{ margin:34px 0px 70px; width:100%; border-bottom:1px solid #ddd; bord
 ul.listNav li{ float:left; border-right:1px solid #ddd; border-top:1px solid #ddd;}
 ul.listNav li a{ text-align:center; font-size:16px; width:136px; height:48px; line-height:48px; display:block;}
 ul.listNav li.active a{ background:#ce3d3a; color:#fff;}
-.list_box{ display:none; padding-bottom:55px;}
+.list_box{ display:none; padding-bottom:100px;}
 /*     p1  关于鲁班   */
 /* content  */
-
-
+/*品牌*/
+.LB_list{ padding:29px 0px; border-bottom:1px solid #ddd;}
+.LB_list:hover{ background:#eee;transition:background 0.5s;-moz-transition:background 0.5s; /* Firefox 4 */-webkit-transition:background 0.5s; /* Safari and Chrome */-o-transition:background 0.5s;}
+.LB_list img{ margin:10px 42px;}
+.LB_list .text_right{ width:790px; margin-left:198px;}
+.LB_list .text_right h4{ font-weight:bolder;}
 /*企业文化*/
 .cultureBox{ border-left:6px solid #ce3d3a; height:136px; width:538px; background:#ededed; margin:40px 0px 0px; padding:18px 20px; overflow:hidden; line-height:17px;}
 .cultureBox b{ min-width:70px; display:inline-block;}
@@ -128,16 +134,42 @@ dl.contact dd{ position:relative; padding-left:50px; margin-bottom:28px; margin-
 .ico_em{ height:26px; width:26px; background:url(../images/ico.png) no-repeat 0px -78px;}
 .ico_phone{ height:26px; width:26px; background:url(../images/ico.png) no-repeat 0px -104px;}
 dl.contact dd.f_left{ margin:0px; width:370px;}
+.zlhb div{ width:247px; height:247px; border:1px solid #ddd; float:left; margin-right:28px; margin-bottom:28px; padding:40px;}
+.zlhb div img{ width:100%;}
 
+/*董事长*/
+.dsz{ background:url(../images/dsz01.png) no-repeat; padding:0px 15px 0px 715px; height:292px; margin-bottom:54px; position:relative; overflow:hidden;}
+.dszBox{ position:absolute; top:0px; padding-right:10px;}
+.dt24{ font-size:24px; margin-bottom:5px;}
+.dsz p{ line-height:23px;}
+.list_box .txtIndent{ line-height:36px; font-size:16px;}
+.dszBar{ position:absolute; right:0px; top:0px; height:72px; width:5px; background:#ce3d3a; z-index:999;}
 
-
-
-
-
-
-
-
-
+.aboutLB{ background:url(../images/aboutLB_img1.png) no-repeat; height:384px; margin-bottom:50px; padding:97px 0 0 85px;}
+.LBtext{ padding:35px 68px 25px;}
+.bgRed{ background:#ce3d3a; color:#fff;}
+.LBtext p.txtIndent{line-height:18px; font-size:14px; margin-bottom:15px;}
+.bgImg{ background:#ce3d3a url(../images/aboutLB_img2.png) no-repeat 10px 13px; padding-left:366px;}
+.aboutLB .dt24{ margin-bottom:30px; color:#fff;}
+.aboutLB h3{ line-height:24px; height:24px; color:#fff;}
+.logoL{ margin-bottom:55px;}
+.logoBox1{ background:url(../images/logo01.png) no-repeat; height:302px; clear:both; margin-bottom:30px;}
+.logoBox1,.logoBox2{ padding:45px 0 0 45px; color:#000;}
+.logoBox2{ background:url(../images/logo02.png) no-repeat; height:432px; padding-right:435px;}
+.logoBox1 h4,.logoBox2 h4{ margin-bottom:15px;}
+.logoBox1 p,.logoBox2 p{ margin-bottom:20px; line-height:16px;}
+/*荣誉历程*/
+.line01{ background:url(../images/line01.png) no-repeat center center; height:125px;}
+.line02{ background:url(../images/line02.png) repeat-y top center;}
+.text01,.text02{ padding:30px 0;}
+.text01{ margin-left:468px;}
+.text02{ margin-left:0px;}
+.text02 .rylcText{ text-align:right;}
+.rylcText{ line-height:16px; width:523px; overflow:hidden;}
+.rylcText img{ margin-top:10px;}
+.year{ font-size:16px; color:#e60012; font-weight:bolder;}
+.icon{ background:url(../images/line03.png) no-repeat center center; padding:12px 26px;}
+.line01 span,.line02 span{ float:left;}
 
 
 
@@ -197,11 +229,10 @@ transition:background 0.5s;
 -webkit-transition:background 0.5s; /* Safari and Chrome */
 -o-transition:background 0.5s; /* Opera */}
 .pt .active .text_right h1,.pt .active .text_right p{color:#333;}
-.LB_list img{ margin:50px 100px; float:left;}
-.LB_list .text_right{ padding:50px 30px 50px 360px; }
-.LB_list .text_right span{ font-size:16px; font-family:Arial; padding:0px 15px; font-family:"微软雅黑","Microsoft Yahei"}
-.LB_list .text_right p{line-height:24px; padding-top:20px; color:#666;}
+.LB_list .text_right span{ font-size:14px; font-family:Arial; padding:0px 8px; font-family:"微软雅黑","Microsoft Yahei"}
+.LB_list .text_right p{padding-top:8px; color:#666;}
 .line{ margin:5px 0px; height:1px; background:#ddd; width:100%;}
+
 /**bim方案**/
 .yzfBox{ width:90%; margin:78px auto;}
 .yzfBox img{ display:block; margin:60px auto;}
@@ -219,7 +250,7 @@ transition:background 0.5s;
 .container{ width:90%;margin:78px auto;line-height:24px;}
 .container h4{font-size:16px;}
 .txt1{width:100%;height:292px;}
-.txtIndent{text-indent:30px;}
+.txtIndent{text-indent:2em;}
 .container img{margin:0 auto;}
 .txt2{margin-top:162px;margin-bottom:16px;}
 .container h4{text-align:center;}
