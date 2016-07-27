@@ -184,7 +184,7 @@ ul.news{ margin-bottom:0px;}
 .news_right a img{ width:100%;}
 .news_scrollImg{ margin-top:48px;overflow:hidden; height:189px; position:relative; padding-bottom:48px;}
 .news_scrollImg img{ margin-left:28px;}
-.news_scrollImg h3{ margin-bottom:10px; font-weight:bolder;}
+.news_scrollImg h4{ margin-top:10px; font-weight:bolder;}
 .news_scrollImg h4{ margin-bottom:6px; font-weight:bolder;}
 .news_scrollImg p{ height:80px; overflow:hidden;}
 .news_scrollImg ul{ position:absolute; left:0px; top:0px;}
