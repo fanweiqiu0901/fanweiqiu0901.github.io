@@ -24,7 +24,7 @@ img{ border:none;}
 .regLogin strong{font-weight:normal;cursor:pointer;}
 .loginBox{width:230px;height:188px;padding-left:30px;position:absolute;border:1px solid #e5e7eb;right:82px;bottom:-190px;background:white;z-index: 888888;display:none;}
 .loginBox h5{height:42px;line-height:42px;font-size:14px;color:#898989;}
-.navBar .text, .password{height:23px;border:1px solid #e5e7eb;padding-left:5px;font-size:12px;width:188px;}
+.text, .password{height:23px;border:1px solid #e5e7eb;padding-left:5px;font-size:12px;width:188px;}
 .loginBox p{padding-left:5px;width:198px;}
 .loginBox p input{margin-top: 9px;}
 
@@ -33,7 +33,7 @@ img{ border:none;}
 
 
 
-.nav-btm-logo span{background:url(../images/logo.png) ;display:inline-block;width:354px;height:62px;margin-top:13px;}
+.nav-btm-logo span{background:url(../images/logo.png) ;display:inline-block;width:354px;height:62px;margin-top:13px;text-indent:-99999999em;}
 .nav-btm{height:88px;margin:0 auto;width:1600px;min-width:1180px;}
 .nav-btm-list{margin-top:26px;}
 .nav-btm-li{float:left;width:100px;}
@@ -57,7 +57,6 @@ img{ border:none;}
 .nav-btm-contact .wechat span{background: url(../images/wechat.png) no-repeat;display:inline-block;width:32px;height:32px;}
 .nav-btm-contact .wechat span:hover{background: url(../images/wechat_red.png) no-repeat;}
 .nav-btm-contact .wechat img{display:none;position:absolute;left:-290%;bottom:-554%;z-index: 889;}
-
 
 
 
@@ -104,6 +103,8 @@ h4{ font-size:16px; height:16px; line-height:16px;}
 .textCenter{ text-align:center; clear:both;}
 .textBlue{ color:#477aac; font-size:18px; text-decoration:underline; display:block; margin-top:30px;}
 .imgCenter{ display:block; margin:20px auto;}
+.txtIndent{ text-indent:2em;}
+p{ line-height:20px;}
 /* NAV */
 ul.listNav{ margin:34px 0px 70px; width:100%; border-bottom:1px solid #ddd; border-left:1px solid #ddd;}
 ul.listNav li{ float:left; border-right:1px solid #ddd; border-top:1px solid #ddd;}
@@ -119,7 +120,7 @@ ul.listNav li.active a{ background:#ce3d3a; color:#fff;}
 .LB_list .text_right{ width:790px; margin-left:198px;}
 .LB_list .text_right h4{ font-weight:bolder;}
 /*企业文化*/
-.cultureBox{ border-left:6px solid #ce3d3a; height:136px; width:538px; background:#ededed; margin:40px 0px 0px; padding:18px 20px; overflow:hidden; line-height:17px;}
+.cultureBox{ border-left:6px solid #ce3d3a; height:164px; width:538px; background:#ededed; margin:40px 0px 0px; padding:18px 20px; overflow:hidden; line-height:20px;}
 .cultureBox b{ min-width:70px; display:inline-block;}
 .kw5 span{ padding:0px 10px; font-size:18px; border-bottom:1px solid #ce3d3a; margin-right:65px;}
 .kw5{margin:35px 0px 45px}
@@ -134,7 +135,7 @@ dl.contact dd{ position:relative; padding-left:50px; margin-bottom:28px; margin-
 .ico_em{ height:26px; width:26px; background:url(../images/ico.png) no-repeat 0px -78px;}
 .ico_phone{ height:26px; width:26px; background:url(../images/ico.png) no-repeat 0px -104px;}
 dl.contact dd.f_left{ margin:0px; width:370px;}
-.zlhb div{ width:247px; height:247px; border:1px solid #ddd; float:left; margin-right:28px; margin-bottom:28px; padding:40px;}
+.zlhb div{ width:192px; height:192px; border:1px solid #ddd; float:left; margin-right:28px; margin-bottom:28px; padding:22px;}
 .zlhb div img{ width:100%;}
 
 /*董事长*/
@@ -142,22 +143,22 @@ dl.contact dd.f_left{ margin:0px; width:370px;}
 .dszBox{ position:absolute; top:0px; padding-right:10px;}
 .dt24{ font-size:24px; margin-bottom:5px;}
 .dsz p{ line-height:23px;}
-.list_box .txtIndent{ line-height:36px; font-size:16px;}
+.textDsz .txtIndent{ line-height:36px; font-size:16px;}
 .dszBar{ position:absolute; right:0px; top:0px; height:72px; width:5px; background:#ce3d3a; z-index:999;}
 
 .aboutLB{ background:url(../images/aboutLB_img1.png) no-repeat; height:384px; margin-bottom:50px; padding:97px 0 0 85px;}
 .LBtext{ padding:35px 68px 25px;}
 .bgRed{ background:#ce3d3a; color:#fff;}
-.LBtext p.txtIndent{line-height:18px; font-size:14px; margin-bottom:15px;}
+.LBtext p.txtIndent{line-height:20px; font-size:14px; margin-bottom:15px;}
 .bgImg{ background:#ce3d3a url(../images/aboutLB_img2.png) no-repeat 10px 13px; padding-left:366px;}
 .aboutLB .dt24{ margin-bottom:30px; color:#fff;}
 .aboutLB h3{ line-height:24px; height:24px; color:#fff;}
 .logoL{ margin-bottom:55px;}
 .logoBox1{ background:url(../images/logo01.png) no-repeat; height:302px; clear:both; margin-bottom:30px;}
-.logoBox1,.logoBox2{ padding:45px 0 0 45px; color:#000;}
+.logoBox1,.logoBox2{ padding:40px 0 0 45px; color:#000;}
 .logoBox2{ background:url(../images/logo02.png) no-repeat; height:432px; padding-right:435px;}
 .logoBox1 h4,.logoBox2 h4{ margin-bottom:15px;}
-.logoBox1 p,.logoBox2 p{ margin-bottom:20px; line-height:16px;}
+.logoBox1 p,.logoBox2 p{ margin-bottom:10px; line-height:20px;}
 /*荣誉历程*/
 .line01{ background:url(../images/line01.png) no-repeat center center; height:125px;}
 .line02{ background:url(../images/line02.png) repeat-y top center;}
@@ -234,44 +235,27 @@ transition:background 0.5s;
 .line{ margin:5px 0px; height:1px; background:#ddd; width:100%;}
 
 /**bim方案**/
-.yzfBox{ width:90%; margin:78px auto;}
-.yzfBox img{ display:block; margin:60px auto;}
-.yzfBox ul{ margin:50px 0px;}
-.yzfBox li{ background:#fff; margin-bottom:33px;}
-.yzfBox p{ line-height:24px;}
-.yzfBox li .text{ background:#d9d9d9; padding:50px 0px 30px 60px;}
-.yzfBox li img{ margin:0px; padding-left:60px; float:right;}
-.yzfBox li h1{ margin-bottom:40px;}
-.yzfBox li p{ line-height:22px;}
-.yzfBox dt{ height:60px; line-height:60px;}
-.yzfBox dd a{ height:50px; line-height:50px;}
-.yzfBox dd a:hover{ text-decoration:underline; color:#c00;}
-/*施工*/
-.container{ width:90%;margin:78px auto;line-height:24px;}
-.container h4{font-size:16px;}
-.txt1{width:100%;height:292px;}
-.txtIndent{text-indent:2em;}
-.container img{margin:0 auto;}
-.txt2{margin-top:162px;margin-bottom:16px;}
-.container h4{text-align:center;}
-.txt3{margin:66px 0 96px;}
-.appList li{height:370px;}
-.appList div{float:left;}
-.appList img{float:right;}
-.list1{width:632px;}
-.appList h4{text-align:left;margin-bottom:40px;}
-.appList h4.margin20{margin-bottom:20px;}
-.list2{width:506px;}
-.list3, .list4{width:742px;}
-.list5{width:608px;}
-.list6{width:608px;}
-.list7{width:608px;}
-li.height420{height:420px;}
-li.height1402{height:1422px;}
-.downLoad {margin:85px 72px;}
-.downLoad h4{text-align:left;}
-.downLoad a{display:block;margin-top:50px;}
-.downLoad a:hover{text-decoration:underline;}
+
+/*业主*//*施工*/
+.yzfdiv{ height:239px; margin-bottom:28px; padding:33px 530px 0px 33px;}
+.sgfdiv{ height:239px; margin-bottom:28px; padding:33px 500px 0px 33px;}
+.yzf01{ background:url(../images/yzfbg_03.png); margin-top:50px;}
+.yzf02{ background:url(../images/yzfbg_06.png);}
+.yzf03{ background:url(../images/yzfbg_08.png);}
+.yzf04{ background:url(../images/yzfbg_10.png);}
+.yzf05{ background:url(../images/yzfbg_12.png);}
+.yzf06{ background:url(../images/yzfbg_14.png);}
+.yzf07{ background:url(../images/yzfbg_16.png);}
+.yzfdiv h4,.sgfdiv h4{ margin-bottom:10px;}
+.sgf01{ background:url(../images/sgf_06.png);}
+.sgf02{ background:url(../images/sgf_09.png);}
+.sgf03{ background:url(../images/sgf_12.png);}
+.sgf04{ background:url(../images/sgf_15.png);}
+.sgf05{ background:url(../images/sgf_17.png);}
+.sgf06{ background:url(../images/sgf_19.png);}
+.sgf07{ background:url(../images/sgf_21.png); padding:33px 15px 0px 33px;}
+.sgf07 .f_left{ width:587px;}
+.sgf07 .f_right{ width:440px;}
 
 
 /*join us*/

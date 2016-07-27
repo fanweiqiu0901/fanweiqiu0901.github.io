@@ -1,5 +1,7 @@
 // JavaScript Document
+new WOW().init();
 //banner h
+
 $(".banner").height($(window).height()- $(".navBar").height()-150);
 
 
@@ -53,7 +55,7 @@ $.fn.slide = function(){
 
 
 
-	new WOW().init();
+	
 // listNav
 $(function(){
 	$('.list_box').eq(0).css('display','block');
