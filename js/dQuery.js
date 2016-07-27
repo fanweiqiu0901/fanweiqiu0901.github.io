@@ -4,10 +4,10 @@
 $('.nav-btm-li').hover(function(){
 	$(this).addClass('ok').find('.nav-btm-sons').stop(true,true).slideUp(0).slideDown(300);
 },function(){
-	$(this).removeClass("ok");
 	$('.ok').find('.nav-btm-sons').stop(true,true).slideUp(200);
-	
+	$(this).removeClass("OK");
 })
+
 
 $('#searchBtn').click(function(e){
 	 $(this).toggleClass('on').next('.searchBox').stop().fadeToggle();
@@ -42,7 +42,9 @@ $('#submit').click(function(){
 	$('#loginBox').stop().fadeToggle();
 })
 
- 
+ $(window).load(function() {
+        $(".loading").fadeOut();
+ });
 
 
 
