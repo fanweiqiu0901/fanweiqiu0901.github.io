@@ -239,6 +239,7 @@ transition:background 0.5s;
 /*业主*//*施工*/
 .yzfdiv{ height:239px; margin-bottom:28px; padding:33px 530px 0px 33px;}
 .sgfdiv{ height:239px; margin-bottom:28px; padding:33px 500px 0px 33px;}
+.yzfdiv p,.sgfdiv p{ color:#fff;}
 .yzf01{ background:url(../images/yzfbg_03.png); margin-top:50px;}
 .yzf02{ background:url(../images/yzfbg_06.png);}
 .yzf03{ background:url(../images/yzfbg_08.png);}
@@ -256,6 +257,7 @@ transition:background 0.5s;
 .sgf07{ background:url(../images/sgf_21.png); padding:33px 15px 0px 33px;}
 .sgf07 .f_left{ width:587px;}
 .sgf07 .f_right{ width:440px;}
+.sgf07 .f_right p{ color:#333;}
 
 
 /*join us*/
