@@ -2,6 +2,7 @@
 
 // nav
 $('.nav-btm-li').hover(function(){
+	console.log('sssss');
 	$(this).addClass('ok').find('.nav-btm-sons').stop(true,true).slideUp(0).slideDown(300);
 },function(){
 	$(this).removeClass("ok");

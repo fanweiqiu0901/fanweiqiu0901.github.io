@@ -1,5 +1,6 @@
 // JavaScript Document
-new WOW().init();
+	
+	new WOW().init();
 //banner h
 
 $(".banner").height($(window).height()- $(".navBar").height()-150);
@@ -57,11 +58,21 @@ $("#news_scrollImg").slide();
 // listNav
 $(function(){
 	$('.list_box').eq(0).css('display','block');
-	$('.listNav li').click(function(){
-		$('.listNav li').removeClass('active');
+	$('.listNav>li').click(function(){
+		$('.listNav>li').removeClass('active');
 		$('.list_box').css('display','none');
 		$(this).addClass('active');
 		$('.list_box').eq($(this).index()).css('display','block');
+	})
+});
+
+$(function(){
+	$('.list2_box').eq(0).css('display','block');
+	$('.list2').click(function(){
+		$('.list2').removeClass('active');
+		$('.list2_box').css('display','none');
+		$(this).addClass('active');
+		$('.list2_box').eq($(this).index()).css('display','block');
 	});
 });
 //download
@@ -69,5 +80,4 @@ $(".addmore").click(function(){
 	$(this).hide();
 	$(".HidBox").animate({height:'2784px'}, "slow")
 	})
-
 

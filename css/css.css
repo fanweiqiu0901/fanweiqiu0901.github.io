@@ -24,7 +24,7 @@ img{ border:none;}
 .regLogin strong{font-weight:normal;cursor:pointer;}
 .loginBox{width:230px;height:188px;padding-left:30px;position:absolute;border:1px solid #e5e7eb;right:82px;bottom:-190px;background:white;z-index: 888888;display:none;}
 .loginBox h5{height:42px;line-height:42px;font-size:14px;color:#898989;}
-.loginBox .text,.password{height:23px;border:1px solid #e5e7eb;padding-left:5px;font-size:12px;width:188px;}
+.text, .password{height:23px;border:1px solid #e5e7eb;padding-left:5px;font-size:12px;width:188px;}
 .loginBox p{padding-left:5px;width:198px;}
 .loginBox p input{margin-top: 9px;}
 
@@ -34,7 +34,7 @@ img{ border:none;}
 
 
 .nav-btm-logo span{background:url(../images/logo.png) ;display:inline-block;width:354px;height:62px;margin-top:13px;text-indent:-99999999em;}
-.nav-btm{height:88px;margin:0 auto;width:1600px;min-width:1180px;}
+.nav-btm{height:88px;margin:0 auto;width:1280px;}
 .nav-btm-list{margin-top:26px;}
 .nav-btm-li{float:left;width:100px;}
 .nav-btm-list li.width68{width:68px;}
@@ -105,12 +105,17 @@ h4{ font-size:16px; height:16px; line-height:16px;}
 .imgCenter{ display:block; margin:20px auto;}
 .txtIndent{ text-indent:2em;}
 p{ line-height:20px;}
+.aU{ text-decoration:underline; display:block; margin-bottom:30px;}
 /* NAV */
-ul.listNav{ margin:34px 0px 70px; width:100%; border-bottom:1px solid #ddd; border-left:1px solid #ddd; overflow:hidden;}
+ul.listNav{ margin:34px 0px 70px; width:100%; border-bottom:1px solid #ddd; border-left:1px solid #ddd; position:relative;}
 ul.listNav li{ float:left; border-right:1px solid #ddd; border-top:1px solid #ddd;}
 ul.listNav li a{ text-align:center; font-size:16px; width:136px; height:48px; line-height:48px; display:block;}
 ul.listNav li.active a{ background:#ce3d3a; color:#fff;}
 .list_box{ display:none; padding-bottom:100px;}
+ul.listNav .navList2{ position:absolute; padding:30px 0px; background:url(../images/ico_03.png) no-repeat 60px 1px;border:0px; top:49px;}
+ul.listNav .navList2 li {border:0px;background:none;padding:0px 20px; border-right:2px solid #ce3d3a; font-size:16px; color:#666;cursor:pointer;}
+ul.listNav .navList2 li:hover{ color:#ce3d3a;}
+ul.listNav .navList2 li.active{ color:#ce3d3a; background:none;}
 /*     p1  关于鲁班   */
 /* content  */
 /*品牌*/
@@ -199,7 +204,7 @@ ul.news{ margin-bottom:0px;}
 .news_list_box .date span{ display:block; text-align:left;}
 .news_list_box .date span.ym{font-size:16px; line-height:16px;}
 .news_list_box .date span.d{ color:#fb0b0b; font-size:48px; line-height:48px; font-weight:500;}
-.news_list_box .text{ padding:0px 70px 0px 15px; overflow:hidden; height:88px;}
+.news_list_box .text1{ padding:0px 70px 0px 15px; overflow:hidden; height:88px;}
 .news_list_box .text p{ color:#999; margin-top:10px;}
 .page{ margin:80px auto 35px; text-align:center;}
 .page,.page a,.page span{ color:#333; padding:10px; font-size:16px; font-weight:bold;}
@@ -256,7 +261,15 @@ transition:background 0.5s;
 .sgf07 .f_right{ width:440px;}
 .sgf07 .f_right p{ color:#333;}
 
-
+/*服务*/
+.alList{ margin-bottom:30px;}
+.alList li{ float:left; width:364px; height:209px; overflow:hidden; margin-right:2px; margin-bottom:2px; position:relative;}
+.alList li span{ position:absolute; top:0px; left:0px; display:block; padding:167px 0px 24px; color:#fff; text-align:center; width:100%; background:url(../images/bg_03.png) no-repeat center center; display:none;}
+.alList li:hover span{ display:block;}
+.list2_box{ display:none; padding:60px 0px;}
+.stitle{ padding:45px 0px 10px; display:block;}
+.qfw p{ width:480px;}
+.qfw h5{ height:30px; line-height:30px; font-size:14px;}
 /*join us*/
 table{border-collapse:collapse; font-size:16px;}
 .joinus{ width:90%; margin:0 auto;}
