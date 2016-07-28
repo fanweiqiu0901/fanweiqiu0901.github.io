@@ -263,7 +263,7 @@ transition:background 0.5s;
 
 /*服务*/
 .alList{ margin-bottom:30px;}
-.alList li{ float:left; width:364px; height:209px; overflow:hidden; margin-right:2px; margin-bottom:2px; position:relative;}
+.alList li{ float:left; width:364px; height:209px; overflow:hidden; margin-right:2px; margin-bottom:2px; position:relative;cursor:pointer}
 .alList li span{ position:absolute; top:0px; left:0px; display:block; padding:167px 0px 24px; color:#fff; text-align:center; width:100%; background:url(../images/bg_03.png) no-repeat center center; display:none;}
 .alList li:hover span{ display:block;}
 .list2_box{ display:none; padding:60px 0px;}
