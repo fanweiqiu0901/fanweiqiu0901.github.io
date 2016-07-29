@@ -57,24 +57,24 @@ $("#news_scrollImg").slide();
 	
 // listNav
 $(function(){
-	$('.list_box').eq(0).css('display','block');
-	$('.listNav>li').click(function(){
-		$('.listNav>li').removeClass('active');
-		$('.list_box').css('display','none');
-		$(this).addClass('active');
-		$('.list_box').eq($(this).index()).css('display','block');
-	})
+	if($('.navList2').length>0){
+		$('.list2_box').eq(0).css('display','block');
+			$('.list2').click(function(){
+				$('.list2').removeClass('active');
+				$('.list2_box').css('display','none');
+				$(this).addClass('active');
+				$('.list2_box').eq($(this).index()).css('display','block');
+		})}else{
+			$('.list_box').eq(0).css('display','block');
+		$('.listNav>li').click(function(){
+			$('.listNav>li').removeClass('active');
+			$('.list_box').css('display','none');
+			$(this).addClass('active');
+			$('.list_box').eq($(this).index()).css('display','block');
+			});
+			}
 });
 
-$(function(){
-	$('.list2_box').eq(0).css('display','block');
-	$('.list2').click(function(){
-		$('.list2').removeClass('active');
-		$('.list2_box').css('display','none');
-		$(this).addClass('active');
-		$('.list2_box').eq($(this).index()).css('display','block');
-	});
-});
 //download
 $(".addmore").click(function(){
 	$(this).hide();
