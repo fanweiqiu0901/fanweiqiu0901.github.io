@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>加入我们</title>
+<title>BIM平台</title>
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/animate.min.css">
 </head>
@@ -132,193 +132,74 @@
 	</div>
 	<!-- nav end -->
     
+    
 
-<div class="banner join_us wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+<div class="banner BIM_PT wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 </div>
 <div class="w_1360 banner_title">
-    <img src="images/BIM_joinus_title.png" />
+    <img src="images/bim-platform.png" />
 </div>
-<!--banner over -->
+
+
+
 <div class="w_1360">
     <ul class="listNav clearfix">
-   		<li class="active"><a href="javascript:;">关于我们</a></li>
-        <li><a href="javascript:;">社会招聘</a></li>
-        <li><a href="javascript:;">校园招聘</a></li>
-
+        <li class="active"><a href="javascript:;">BIM系统</a></li>
+        <li><a href="javascript:;">建模 · 算量</a></li>
+        <li><a href="javascript:;">工程数据</a></li>
     </ul>
-	<div class="list_box">
-    <!--关于我们-->
-    <div class="listNub clearfix"><img src="images/NO.1.png" />优越的办公环境</div>
-    <p class="textM">位于五角场创智天地写字楼区域，将近5000平的高端办公场所，绿化高度覆盖，人性化的设计，明亮的布局，充分自由整洁的个人2米空间。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.2.png" />简单的工作氛围</div>
-    <p class="textM">兼具互联网行业的亲和IT软件行业的年轻个性，这里是一群做着复杂工作的简单人。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.3.png" />帮助成长的学习型团队</div>
-    <p class="textM">公司提供免费书籍借阅、提供樊登读书会听书看书优惠会员办理，让你的成长一路书香相随。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.4.png" />广阔的晋升发展空间</div>
-    <p class="textM">公司提供免费书籍借阅、提供樊登读书会听书看书优惠会员办理，让你的成长一路书香相随。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.5.png" />系统的职业培训</div>
-    <p class="textM">完善的新员工培训、在职培训（营销类、工程师类、研发类）体系助力个人成长。同时，为优秀人才、管理人才的培训更是不遗余力，提供全方面的管理培训及外出培训机会。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.6.png" />小点心供应</div>
-    <p class="textM">完善的新员工培训、在职培训（营销类、工程师类、研发类）体系助力个人成长。同时，为优秀人才、管理人才的培训更是不遗余力，提供全方面的管理培训及外出培训机会。</p>
-    
-    <div class="listNub clearfix"><img src="images/NO.7.png" />节假福利、带薪年假、团队业余活动应有尽有</div>
-    
-    
-    <div class="abImg" id="abImg">
-    	<ul class="clearfix">
-        	<li class="l1" style="background:red;"><img src="images/img02.png" /></li>
-            <li class="cur" style="background:blue;"><img src="images/img01.png" /></li>
-            <li class="r1" style="background:green;"><img src="images/img03.png" /></li>
-        </ul>
-    </div>
-	<script>
-	window.onload = function(){
-	var oDiv = document.getElementById('abImg');
-	var oUl = oDiv.getElementsByTagName('ul')[0];
-	var aLi = oUl.children;
-	var len = aLi.length;
-	var aClass = [];
-	var bReady = true;
-	for(var i =0; i<len; i++){
-		aClass.push(aLi[i].className);
-	}
-	setInterval(function(){
-		if(!bReady) return;
-		bReady = false;
-		aClass.unshift(aClass.pop());
-		tab();
-		},5000)
-	function tab(){
-		for(var i =0; i<len; i++){
-			aLi[i].className = aClass[i];
-			}
-		var oCur = document.querySelector(".cur");
-		oCur.addEventListener("transitionend",function(){
-			//alert(1)
-			bReady = true;
-			},false);
-		}
-	
-	}
-
-
-</script>
-    </div>
+	<!--二级页面-->
     <div class="list_box">
-
-
-
-    <table class="joinus">
-        <thead>
-            <tr>
-                <th>职位名称</th>
-                <th>职位类型</th>
-                <th>招聘人数</th>
-                <th>工作地点</th>
-                <th>发布时间</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="#">给排水/暖通工程师</a></td>
-                <td>技术类</td>
-                <td>10</td>
-                <td>上海</td>
-                <td>2016-05-13</td>
-            </tr>
-            <tr>
-                <td><a href="#">给排水/暖通工程师</a></td>
-                <td>技术类</td>
-                <td>10</td>
-                <td>上海</td>
-                <td>2016-05-13</td>
-            </tr>
-            <tr>
-                <td><a href="#">给排水/暖通工程师</a></td>
-                <td>技术类</td>
-                <td>10</td>
-                <td>上海</td>
-                <td>2016-05-13</td>
-            </tr>
-            <tr>
-                <td><a href="#">给排水/暖通工程师</a></td>
-                <td>技术类</td>
-                <td>10</td>
-                <td>上海</td>
-                <td>2016-05-13</td>
-            </tr>
-            <tr>
-                <td><a href="#">给排水/暖通工程师</a></td>
-                <td>技术类</td>
-                <td>10</td>
-                <td>上海</td>
-                <td>2016-05-13</td>
-            </tr>
-        </tbody>
-    </table>
-
-
- 	<div class="w_1360 page"><a href="#">首页</a><a href="#">上一页</a> < <a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a> > <a href="#">下一页</a><a href="#">尾页</a><span>1/36</span><input type="text" /><a href="#">Go</a></div>
+    	<div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    <div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    <div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    <div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    <div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    <div class="pt_list clearfix">
+    	<img src="images/pt_01.png" height="59" width="59" />
+        <div class="text_right">
+        	<h4>鲁班土建<span>Luban Architecture(Luban AR)</span></h4>
+            <p>3月12日，深圳地铁集团与万科举行战略合作备忘录签约仪式，宣布达成战略合作意向。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；。万科拟主要以新发行股份方式，收购深圳地铁集团所持有的目标公司的全部或部分股权；同时双方建立战略合作关系，将依托“轨道+物业”模式作...</p>
+        </div>
+    </div>
+    
+    
+    </div>
+    <div class="list_box">2</div>
+    <div class="list_box">3</div>
+    
 
 </div>
-
- <div class="list_box">
-<!--校园招聘-->
-<div class="container80per">
-		<h4 class="tit1">给排水/暖通工程师</h4>
-		<div class="recruitTags">
-			<ul>
-				<li>
-					职位类别：<span>技术类  </span>
-				</li>
-				<li>
-					工作经验：<span>1年以上   </span>
-				</li>
-				<li>
-					工作性质： <span>	全职  </span>
-				</li>
-				<li>
-					发布时间：<span>2016-05-13  </span>
-				</li>
-				<li>
-					学历要求：<span>大专及以上   </span>
-				</li>
-				<li>
-					招聘人数：<span>10   </span>
-				</li>
-			</ul>
-		</div>
-		<div  class="recruitDescribe">
-			<ul>
-				<li>
-					<h4><strong>职位描述</strong></h4>
-					<p>1.工程成本测算，指导服务方成本管控； </p>
-					<p>2.协助项目部工程材料管控；  </p>
-					<p>3.协助完成现场质量安全资料，收集反馈客户技术应用需求，及时沟通； </p>
-					<p>4.工作中使用建筑软件和信息技术。 </p>
-				</li>
-				<li>
-					<h4><strong>职位要求</strong></h4>
-					<p>1.建筑安装或工民建、工程预算等相关专业；  </p>
-					<p>2.2年以上工程现场工作经验，熟悉给排水或暖通专业知识；  </p>
-					<p>3.有较好的计算机应用基础；  </p>
-					<p>4.具有较好的表达能力和沟通能力；  </p>
-					<p>5.会鲁班软件或其它算量软件者优先。  </p>
-				</li>
-			</ul>
-		</div>
-        <div class="bl"></div>
-		<a href="mailto:：hr@lubansoft.com" class="mail">投递简历：hr@lubansoft.com</a>
-	</div>
-</div>
-</div>
-
-
 
 <!-- footer start -->
 	<nav class="bg_blue wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
@@ -393,7 +274,6 @@
 	    </div>
 	</footer>
 	<!-- footer end -->
-
 
 <script src="js/jquery.js"></script>
 <script src="js/wow.min.js"></script>

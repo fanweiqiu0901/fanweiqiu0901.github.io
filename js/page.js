@@ -1,10 +1,10 @@
 // JavaScript Document
 	
-	new WOW().init();
+new WOW().init();
 //banner h
 
 $(".banner").height($(window).height()- $(".navBar").height()-150);
-
+$(".plBox").height($(".banner").height());
 (function(window,document,undefined){
 
 $.fn.slide = function(){
@@ -50,8 +50,7 @@ $.fn.slide = function(){
 
 })(window,document);
 
-//轮播图over
-$("#news_scrollImg").slide();	
+
 
 
 	
@@ -59,11 +58,22 @@ $("#news_scrollImg").slide();
 $(function(){
 	if($('.navList2').length>0){
 		$('.list2_box').eq(0).css('display','block');
-			$('.list2').click(function(){
-				$('.list2').removeClass('active');
-				$('.list2_box').css('display','none');
-				$(this).addClass('active');
-				$('.list2_box').eq($(this).index()).css('display','block');
+		$('.navList2').eq(0).css('display','block');
+		$('.listNav>li').mouseover(function(){
+			$('.navList2').css('display','none');
+			var l = $(this).index()/2*136;
+			$('.navList2').eq($(this).index()/2).css({display:'block',left:l});
+			$('.listNav>li').removeClass('active');
+			$(this).addClass('active');
+			$('.list_box').eq($(this).index()).css('display','block');
+			});
+		$('.list2').click(function(){
+			var id = $(this).attr('name');
+			$('.list2').removeClass('active');
+			$('.list2_box').css('display','none');
+			$(this).addClass('active');
+			$('#' + id).css('display','block');
+			
 		})}else{
 			$('.list_box').eq(0).css('display','block');
 		$('.listNav>li').click(function(){
@@ -73,11 +83,31 @@ $(function(){
 			$('.list_box').eq($(this).index()).css('display','block');
 			});
 			}
+			
+			
+			//轮播图over
+			$("#news_scrollImg").slide();
+			
+			//download
+			$(".addmore").click(function(){
+				$(this).hide();
+				$(".HidBox").animate({height:'2784px'}, "slow")
+				})
+				
+			//tab
+			$('.tabBox .tabBody').eq(0).css('display','block');
+			$(".tabBox .tabHead").click(function(){
+				$(".tabBox .tabHead").removeClass("active");
+				$(this).addClass("active");
+				$('.tabBox .tabBody').css('display','none');
+				$('.tabBox .tabBody').eq($(this).index()).css('display','block');
+				})	
+				
+			//视频
+			$('.plBox img').click(function(){
+				$('.plBox img,.banner_title img').hide();
+				$('.plBox video').show();
+				})
 });
 
-//download
-$(".addmore").click(function(){
-	$(this).hide();
-	$(".HidBox").animate({height:'2784px'}, "slow")
-	})
 

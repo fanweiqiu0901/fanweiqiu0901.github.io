@@ -61,7 +61,7 @@ img{ border:none;}
 
 
 /* banner */
-.banner{ width:100%;background-repeat: no-repeat;background-position: center top;background-size: cover;}
+.banner{ width:100%;background-repeat: no-repeat;background-position: center top;background-size: cover; position:relative;}
 @media (max-width:1300px){
 	/*     p1  关于鲁班   */
 	.about_luban{ background:url(../images/lb12.jpg) no-repeat center top;}
@@ -75,6 +75,8 @@ img{ border:none;}
 	.join_us{ background:url(../images/jr12.jpg) no-repeat center top;}
 	/*     P6  下载中心  */
 	.download{ background:url(../images/xz12.jpg) no-repeat center top;}
+	/*     p7   BIM平台视频  */
+	.BIM_PT2{ background:url(../images/ptsp12.jpg) no-repeat center top;}
 	}
 @media (min-width:1300px){
 	/*     p1  关于鲁班   */
@@ -89,6 +91,8 @@ img{ border:none;}
 	.join_us{ background:url(../images/jr19.jpg) no-repeat center top;}
 	/*     P6  下载中心  */
 	.download{ background:url(../images/xz19.jpg) no-repeat center top;}
+	/*     p7   BIM平台视频  */
+	.BIM_PT2{ background:url(../images/ptsp19.jpg) no-repeat center top;}
 	}
 
 
@@ -101,11 +105,13 @@ h4{ font-size:16px; height:16px; line-height:16px;}
 .textRed{color:#ce3d3a;}
 .textWhite{color:#fff;}
 .textCenter{ text-align:center; clear:both;}
-.textBlue{ color:#477aac; font-size:18px; text-decoration:underline; display:block; margin-top:30px;}
+.textBlue{ color:#477aac; font-size:14px; text-decoration:underline; display:block; margin-top:30px;}
 .imgCenter{ display:block; margin:20px auto;}
 .txtIndent{ text-indent:2em;}
 p{ line-height:20px;}
 .aU{ text-decoration:underline; display:block; margin-bottom:30px;}
+.bl{ clear:both; height:15px;}
+.p20{ padding-left:20px;}
 /* NAV */
 ul.listNav{ margin:34px 0px 70px; width:100%; border-bottom:1px solid #ddd; border-left:1px solid #ddd; position:relative;}
 ul.listNav li{ float:left; border-right:1px solid #ddd; border-top:1px solid #ddd;}
@@ -113,7 +119,7 @@ ul.listNav li a{ text-align:center; font-size:16px; width:136px; height:48px; li
 ul.listNav li.active a{ background:#ce3d3a; color:#fff;}
 .list_box{ display:none; padding-bottom:100px;}
 ul.listNav .navList2{ position:absolute; padding:30px 0px; background:url(../images/ico_03.png) no-repeat 60px 1px;border:0px; top:49px;}
-ul.listNav .navList2 li {border:0px;background:none;padding:0px 20px; border-right:2px solid #ce3d3a; font-size:16px; color:#666;cursor:pointer; height:16px; line-height:16px;}
+ul.listNav .navList2 li {border:0px;background:none;padding:0px 12px; border-right:2px solid #ce3d3a; font-size:14px; color:#666;cursor:pointer; height:16px; line-height:16px;}
 ul.listNav .navList2 li:hover{ color:#ce3d3a;}
 ul.listNav .navList2 li.active{ color:#ce3d3a; background:none;}
 /*     p1  关于鲁班   */
@@ -223,7 +229,19 @@ ul.news{ margin-bottom:0px;}
 hr{ background:#ea3737; height:1px; border:0px; margin:30px auto;}
 .pt p{ margin-bottom:30px;}
 .m100{ margin-left:100px;}
-
+.m50{ margin-left:50px;}
+.tabBox .tabHead{ display:inline; padding:10px 15px; background:#ddd; border-top:2px solid #ddd; float:left; border-right:1px solid #cbcbcb; border-bottom:1px solid #cbcbcb; position:relative; z-index:10;cursor:pointer;}
+.tabBox .tabHead.active{ background:#fff; border-top:2px solid #ea3737; color:#ea3737; border-bottom:1px solid #fff;}
+.tabBox .tabBody{ clear:both; border-top:1px solid #cbcbcb; position:relative; top:-1px; z-index:8; padding:25px 0px; display:none;}
+.pt_list{ border-bottom:1px solid #ddd; cursor:pointer;}
+.pt_list:hover{ background:#eee;}
+.pt_list{ padding-top:20px; padding-right:110px;}
+.pt_list img{ margin:14px 40px 34px 106px; float:left;}
+.pt_list h4{ font-weight:bolder; margin:0px 0px 7px;}
+.pt_list h4 span{ font-size:12px; padding-left:10px;}
+.plBox{ width:800px; margin:0 auto; position:relative;}
+.plBox img{ position:absolute; top:30%; left:30%;}
+.plBox video{ position:absolute; width:100%; display:none; height:100%;}
 /**bim方案**/
 
 /*业主*//*施工*/
@@ -260,76 +278,46 @@ hr{ background:#ea3737; height:1px; border:0px; margin:30px auto;}
 .qfw h5{ height:30px; line-height:30px; font-size:14px;}
 /*join us*/
 table{border-collapse:collapse; font-size:16px;}
-.joinus{ width:90%; margin:0 auto;}
-.joinus thead{ background:#015b8b; height:60px; line-height:60px; color:#fff;}
-.joinus td{ width:20%; line-height:50px; height:50px; text-align: center;border-bottom:1px dashed #a7a7a7;}
+.joinus{ width:100%; margin:0 auto;}
+.joinus th{ font-weight:normal;}
+.joinus thead{ background:#015b8b; height:48px; line-height:48px; color:#fff;}
+.joinus td{ width:20%; line-height:47px; height:47px; text-align: center;border-bottom:1px dashed #a7a7a7;}
 .joinus td a:hover{ color:#015b8b; text-decoration:underline;}
+.joinus tbody{ font-size:14px;}
+.listNub{ height:32px; line-height:32px; font-size:16px}
+.listNub img{ margin-right:10px; float:left;}
+.textM{ padding:0 3em; margin:20px 0px; color:#666;}
+.abImg{ width:1100px; height:400px; margin:60px auto; overflow:hidden;}
+.abImg ul{ position:relative; margin:60px auto; width:460px; height:320px;}
+.abImg li{ position:absolute; left:0px; top:0px;width:100%; height:100%; opacity:0;
+	transform:perspective(800px) rotateY(0); transition:1s all ease;}
+.abImg li img{ width:100%;}
+
+.abImg ul li.l1{ z-index:1; opacity:0.4;transform:perspective(800px) translateX(-300px) rotateY(45deg)}
+.abImg ul li.cur{ z-index:5; opacity:1;}
+.abImg ul li.r1{ z-index:1;opacity:0.4;transform:perspective(800px) translateX(300px) rotateY(-45deg)}
+
 /*joinUs _detail*/
 
-.container80per{min-width:1200px;margin:0 auto;line-height:24px;width:70%;margin-top: 84px;height:1130px;}
-.container80per .tit1{width:348px;height:80px;background:#014f7f;color:white;text-align: center;line-height:80px;}
+.container80per{margin:0 auto;line-height:24px;margin-top: 84px;}
+.container80per .tit1{width:350px;height:50px;background:#ce3d3a;color:white;text-align: center;line-height:50px;}
 .container80per h4{font-size:16px;}
-.recruitTags{margin:30px 0;padding-left:98px;background:#eff9ff; }
+.recruitTags{margin:30px 0 10px;padding:20px 98px;background:#ebebeb; }
 .recruitTags ul{overflow:hidden;width:100%;height:100%;}
-.recruitTags ul li{float:left;width:24%;height:74px;line-height:74px;}
-.recruitDescribe{padding-left:98px;background:#eff9ff;}
+.recruitTags ul li{float:left;width:24%;height:38px;line-height:38px;}
+.recruitDescribe{padding-left:98px;background:#ebebeb;}
 .recruitDescribe h4{height:50px;padding-top:28px;}
 .recruitDescribe ul{padding-bottom:50px; }
-.recruitDescribe p{height:46px;line-height:46px;}
+.recruitDescribe p{height:37px;line-height:37px;}
 .contactMethod {padding-left:98px;margin-top: 58px;}
 .contactMethod p, .contactMethod a{height:24px;line-height:24px;}
 .contactMethod h4{margin-bottom: 8px;}
 .contactMethod a{text-align: right;display:block;}
 .contactMethod .back span{background: url(../images/back.png) no-repeat;width:16px;height:13px;display:inline-block;}
-/* BIM 平台*/
-.w_1176{ width:1176px; margin:0 auto 60px; display:none;}
-.borderB{ border-bottom:1px solid #000; padding:30px 0px;}
-.borderB img{ display:block; margin:40px auto;}
-.logoImg{ padding-left:70px; background:url(../images/logoLuban%20Management%20Cockpit.png) no-repeat 0px 40px;}
-.ys img{ display:block; margin:40px auto;}
-/*BIM yinyong*/
-.container1170{min-width:1170px;margin:0 auto;width:60%;}
-.container1170 video{background:url(../images/vedio_bg.jpg);clear:both;display:block;margin:auto}
-.tabContainer{padding-top:88px;overflow:hidden;}
-.appTabHeader .cur{border-top:12px solid #c00000;}
-.appTabHeader {height:50px;}
-.appTabHeader p{width:110%;border-top:1px solid #000000;height:50px;padding-left:64px;}
-.appTabHeader span{float:left;height:46px;line-height:46px;font-size:18px;display:inline-block;border-top:12px solid transparent;margin-top:-6px;margin-right:230px;}
-.appTabBody>li{display:none;}
-.appTabBody>li.on{display:block;}
-.appTabBody_details{padding-top:42px;}
-.appTabBody_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
-.appTabBody_details h4{font-size:18px;height:30px;color:#333333;}
-.appTabBody_details p{font-size:14px;line-height:24px;color:#333333;}
-.appTabBody_details img{clear:both;display:block;margin:auto;margin-top: 34px;}
-.leftRight{overflow: hidden;width:100%;}
-.leftRight img{clear:none;}
-.leftRightW1050{overflow: hidden;width:1050px;margin:auto}
-.leftRightW1050 img{clear:none;}
-.appTabBody_details li.noBorder{border-bottom:0;}
-.appDownload{text-decoration:underline;color:#c00000;font-size:14px;line-height:24px;}
-/*BIM tujian*/
-p.marginBtm34{margin-bottom: 34px;}
-.tujianTabBody{padding-top:42px;}
-.tujianTabBody_details li{margin-bottom:32px;border-bottom:1px solid #000000;padding-bottom:40px;}
-.tujianTabBody h4{font-size:18px;height:30px;color:#333333;}
-.tujianTabBody p{font-size:14px;line-height:24px;color:#333333;}
-.tujianTabBody img{clear:both;display:block;margin:auto;margin-top: 34px;}
-.leftRight{overflow: hidden;width:100%;}
-.leftRight img{clear:none;}
-.leftRightW1050{overflow: hidden;width:1050px;margin:auto}
-.leftRightW1050 img{clear:none;}
-.tujianTabBody_details li.noBorder{border-bottom:0;}
-.loadAndRefresh{overflow:hidden;}
-.loadAndRefresh div{float:left;}
-.marginL48{margin-left: 48px;}
-.tujianContainer{padding-top:88px;overflow:hidden;}
-.tujianTabHeader .cur{border-top:12px solid #c00000;}
-.tujianTabHeader {height:50px;}
-.tujianTabHeader p{width:110%;border-top:1px solid #000000;height:50px;padding-left:64px;}
-.tujianTabHeader span{float:left;height:46px;line-height:46px;font-size:18px;display:inline-block;border-top:12px solid transparent;margin-top:-6px;margin-right:230px;cursor:pointer;}
-.tujianTabBody>li{display:none;}
-.tujianTabBody>li.on{display:block;}
+.navList2{ display:none;}
+.mail{ margin:0px 98px; color:#666; padding-left:30px; background:url(../images/toujianli.png) no-repeat left center;}
+.mail:hover{background:url(../images/toujianlired.png) no-repeat left center; color:#ce3d3a;}
+
 /*  下载中心*/
 .downLoadBox{ width:347px; height:245px; overflow:hidden; position:relative; border:1px solid #ddd; border-top:6px solid #ce3d3a; padding:20px 30px; float:left; margin-right:19px; margin-bottom:20px;}
 .downLoadB{ background:#ddd; height:55px; position:absolute;bottom:0px; width:100%; left:0px;}
@@ -348,8 +336,14 @@ p.marginBtm34{margin-bottom: 34px;}
 .HidBox span{ margin:5px 0px 20px;}
 .HidBox h3{ font-size:16px; margin:30px 0px 10px;}
 
-
-
+/* search */
+.searchBox{ width:1000px; margin:0 auto;}
+.searchText{ float:left; width:800px; height:60px; border:4px solid #ce3d3a;}
+.searchText input{ border:0px; width:100%; height:52px; line-height:52px; padding:20px;}
+.searchBtn{ float:right; width:180px; height:60px; background:#ce3d3a url(../images/searchBg.png) no-repeat center center;}
+.searchUl{ margin:15px auto;}
+.searchUl li{ padding:15px 0px; border-bottom:1px solid #dfdfdf;}
+.searchUl li h3{ color:#0829d2; margin-bottom:10px;}
 
 /* foot */
 .bg_blue{ background:#015b8b; padding:40px 0px;}
