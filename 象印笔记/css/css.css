@@ -1,0 +1,58 @@
+/* reset.css */
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,input,th,td,p{margin:0;padding:0;font-family:Microsoft Yahei,arial;}
+table{border-collapse:collapse;}
+img{border:none; vertical-align:top;}
+li{list-style:none}
+a{text-decoration:none}
+em{font-style:normal;}
+strong{ font-weight:normal;}
+textarea{ resize:none; overflow:auto;}
+input,textarea,select,lable{ outline:none; border:none;}
+.clear{zoom:1;}
+.clear:after{content:"";display:block;clear:both;}
+.left{ float:left;}
+.right{ float:right;}
+/* end reset.css */
+#header{ height:47px; width:100%; background:#2dbe60; border-bottom:1px solid #259d4f;}
+.evernote-logo{ background:url(../img/yxbj-logo.png) no-repeat 13px center; display:block; height:47px; width:175px;}
+.evernote-logo span{ position:absolute; top:-45px;}
+#container{ width:100%;}
+@media only screen and (min-width: 751px){
+	#container #main{
+		width: 768px;
+		max-width: 768px;
+		margin: 32px auto 0;
+	}
+}
+.explain{ font-size:15px; color:#fff;  max-width:100%; padding:0 24px; top:278px; position:absolute;}
+.subtitle{ font-size:11px;opacity:0.9; margin-top:6px;}
+.img-1{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_01.png) center 64px no-repeat #758d94;}
+.img-2{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_02.png) center 64px no-repeat #2facb2; margin-left:3px;}
+.img-3{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_03.png) center 64px no-repeat #2dbe60; margin-left:3px;}
+.img-box-1{ position:absolute; z-index:999; background:#758d94; width:100%; height:100%; opacity:0;}
+.img-box-2{ position:absolute; z-index:999; background:#2facb2; width:100%; height:100%; opacity:0;}
+.img-box-3{ position:absolute; z-index:999; background:#2dbe60; width:100%; height:100%; opacity:0;}
+.img-1 dl,.img-2 dl,.img-3 dl{ padding:24px 0;}
+.img-1 dt,.img-2 dt,.img-3 dt{ font-size:18px; color:#fff;padding:0 18px; height:32px; line-height:32px; overflow:hidden;transform:scaleX(0);}
+.img-1 dd,.img-2 dd,.img-3 dd{ font-size:13px; color:#fff; height:28px; line-height:28px;padding:0 18px; overflow:hidden;transform:scaleX(0);}
+.img-1 .dual{ background:#70868c;}
+.img-2 .dual{ background:#2ca3a8;}
+.img-3 .dual{ background:#2ab55b;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{ text-align:center; margin:10px auto; width:736px;}
+.footer a{ border-right:1px solid #ababab;}
+.footer a,.footer span{ color:#ababab; font-size:11px; padding:0px 15px;}
+.footer a:hover{color:#4a8db8}
