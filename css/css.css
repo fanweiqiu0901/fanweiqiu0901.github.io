@@ -66,7 +66,7 @@ input,textarea,select,lable{ outline:none; border:none;}
 	.customer .title{ text-align:center; font-size:24px; margin-bottom:16px;}
 	.customer  p{ margin-bottom:16px; border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5; padding:8px 0; font-size:13px;}
 	.customer dt{ font-size:13px; margin-bottom:8px;}
-	.customer dd{ font-size:2px; margin-bottom:8px; margin-left:18px;}
+	.customer dd{ font-size:12px; margin-bottom:8px; margin-left:18px;}
 	.customer div a{ width:48.5%; display:inline-block; height:34px; text-align:center; color:#fff; background:red; line-height:34px; border-radius:4px; font-size:13px;}
 	.customer>a{ text-align:center; font-size:13px; display:block; margin:10px 0 30px; height:18px; line-height:18px;}
 	.hCustomer .title,.hCustomer>a{ color:#2dbe60;}
