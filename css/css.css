@@ -18,41 +18,74 @@ input,textarea,select,lable{ outline:none; border:none;}
 .evernote-logo span{ position:absolute; top:-45px;}
 #container{ width:100%;}
 @media only screen and (min-width: 751px){
+	#container #main2{ display:none;}
 	#container #main{
+		display:block;
 		width: 768px;
 		max-width: 768px;
 		margin: 32px auto 0;
 	}
+	.explain{ font-size:15px; color:#fff;  max-width:100%; padding:0 24px; top:278px; position:absolute;}
+	.subtitle{ font-size:11px;opacity:0.9; margin-top:6px;}
+	.img-1{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_01.png) center 64px no-repeat #758d94;}
+	.img-2{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_02.png) center 64px no-repeat #2facb2; margin-left:3px;}
+	.img-3{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_03.png) center 64px no-repeat #2dbe60; margin-left:3px;}
+	.img-box-1{ position:absolute; z-index:999; background:#758d94; width:100%; height:100%; opacity:0;}
+	.img-box-2{ position:absolute; z-index:999; background:#2facb2; width:100%; height:100%; opacity:0;}
+	.img-box-3{ position:absolute; z-index:999; background:#2dbe60; width:100%; height:100%; opacity:0;}
+	.img-1 dl,.img-2 dl,.img-3 dl{ padding:24px 0;}
+	.img-1 dt,.img-2 dt,.img-3 dt{ font-size:18px; color:#fff;padding:0 18px; height:32px; line-height:32px; overflow:hidden;transform:scaleX(0);}
+	.img-1 dd,.img-2 dd,.img-3 dd{ font-size:13px; color:#fff; height:28px; line-height:28px;padding:0 18px; overflow:hidden;transform:scaleX(0);}
+	.img-1 .dual{ background:#70868c;}
+	.img-2 .dual{ background:#2ca3a8;}
+	.img-3 .dual{ background:#2ab55b;}
+	.footer{ text-align:center; margin:10px auto; width:736px;}
+	.footer a{ border-right:1px solid #ababab;}
+	
 }
-.explain{ font-size:15px; color:#fff;  max-width:100%; padding:0 24px; top:278px; position:absolute;}
-.subtitle{ font-size:11px;opacity:0.9; margin-top:6px;}
-.img-1{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_01.png) center 64px no-repeat #758d94;}
-.img-2{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_02.png) center 64px no-repeat #2facb2; margin-left:3px;}
-.img-3{ width:254px; height:500px; float:left; position:relative; background:url(../img/tier_illo_03.png) center 64px no-repeat #2dbe60; margin-left:3px;}
-.img-box-1{ position:absolute; z-index:999; background:#758d94; width:100%; height:100%; opacity:0;}
-.img-box-2{ position:absolute; z-index:999; background:#2facb2; width:100%; height:100%; opacity:0;}
-.img-box-3{ position:absolute; z-index:999; background:#2dbe60; width:100%; height:100%; opacity:0;}
-.img-1 dl,.img-2 dl,.img-3 dl{ padding:24px 0;}
-.img-1 dt,.img-2 dt,.img-3 dt{ font-size:18px; color:#fff;padding:0 18px; height:32px; line-height:32px; overflow:hidden;transform:scaleX(0);}
-.img-1 dd,.img-2 dd,.img-3 dd{ font-size:13px; color:#fff; height:28px; line-height:28px;padding:0 18px; overflow:hidden;transform:scaleX(0);}
-.img-1 .dual{ background:#70868c;}
-.img-2 .dual{ background:#2ca3a8;}
-.img-3 .dual{ background:#2ab55b;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.footer{ text-align:center; margin:10px auto; width:736px;}
-.footer a{ border-right:1px solid #ababab;}
 .footer a,.footer span{ color:#ababab; font-size:11px; padding:0px 15px;}
 .footer a:hover{color:#4a8db8}
+
+
+
+@media screen and (max-width: 750px) {
+	#container #main{ display:none;}
+	#container #main2{
+		display:block;
+		border: 1px solid #dedede;
+		width:auto;
+		margin:32px auto 0;
+		overflow:hidden;
+		background:#fcfcfc;
+		padding:0 23px;
+	}
+	.TierSelectionComponent{ display:block; font-size:18px; font-weight:normal; text-align:center; color:#3b3b3b; margin:0 0 16px; padding-top:32px;}
+	.customer .title{ text-align:center; font-size:24px; margin-bottom:16px;}
+	.customer  p{ margin-bottom:16px; border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5; padding:8px 0; font-size:13px;}
+	.customer dt{ font-size:13px; margin-bottom:8px;}
+	.customer dd{ font-size:2px; margin-bottom:8px; margin-left:18px;}
+	.customer div a{ width:48.5%; display:inline-block; height:34px; text-align:center; color:#fff; background:red; line-height:34px; border-radius:4px; font-size:13px;}
+	.customer>a{ text-align:center; font-size:13px; display:block; margin:10px 0 30px; height:18px; line-height:18px;}
+	.hCustomer .title,.hCustomer>a{ color:#2dbe60;}
+	.hCustomer div a{ background:#2dbe60;}
+	
+	.oCustomer .title,.oCustomer>a{ color:#2facb2;}
+	.oCustomer div a{ background:#2facb2;}
+	
+	.fCustomer .title,.fCustomer>a{ color:#758d94;}
+	.fCustomer div a{ background:#758d94;}
+	.footer a,.footer span{ display:block; border:0px; text-align:center; margin:0; padding:0;}
+	
+}
+
+
+
+
+
+
+
+
+
