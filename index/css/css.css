@@ -48,6 +48,7 @@ body{ overflow:hidden;}
 	.page4_text p{ line-height:22px; padding-top:10px; text-indent:2em; font-size:13px;}
 	.page4_title{ display:none;}
 	.page4_text>h2{ display:block; text-align:center; line-height:40px; font-size:30px;}
+	.area{ width:90%;}
 	}
 @media only screen and (min-width: 880px){
 	.page2_text{ float:left; width:70%; height:100%;  padding-top:5%;}
