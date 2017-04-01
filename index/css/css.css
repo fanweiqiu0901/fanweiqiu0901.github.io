@@ -41,17 +41,31 @@ body{ overflow:hidden;}
 #wrap{ position: absolute; top:0; left:0; width:100%;}
 .page{ overflow:hidden;}
 #page1{ background:url(../img/onepage_bg.png) center top no-repeat #797979; height:100%; width:100%; position:relative;}
-@media only screen and (min-width: 980px){
-	.area{ width:980px; margin:0 auto; height:100%;}
-}
+@media only screen and (max-width: 880px){
+	.page2_title{ display:none;}
+	.page2_text{ width:100%;}
+	.page4_text{ float:left; width:100%; height:100%; color:#fff;}
+	.page4_text p{ line-height:22px; padding-top:10px; text-indent:2em; font-size:13px;}
+	.page4_title{ display:none;}
+	.page4_text>h2{ display:block; text-align:center; line-height:40px; font-size:30px;}
+	}
+@media only screen and (min-width: 880px){
+	.page2_text{ float:left; width:70%; height:100%;  padding-top:5%;}
+	.page4_text{ float:left; width:60%; height:100%; color:#fff;}
+	.page4_text p{ line-height:27px; padding-top:30px; text-indent:2em;}
+	.page4_title{ float:right; width:30%; height:100%; padding-top:10%;}
+	.page4_text>h2{ display:none;}
+	}
+
+.area{margin:0 auto; height:100%; position:relative; max-width:980px;}
 .page1_top_bg{ position:absolute; top:0px; left:0px; width:100%; background:red; overflow:hidden;}
-.page1_top{ position:relative;}
-.page1_top>img{ display:block; width:60%; margin:0 auto; padding-top:10%;}
+.page1_top{ position:relative; height:100%;}
+.page1_top>img{ display:block; width:60%; position:absolute; left:50%; top:50%; margin-left:-30%; margin-top:-15%;}
 .page1_bottom_bg{ position:absolute; bottom:0px; left:0px; width:100%; background:#1e243a;}
 .page1_bottom{ position:relative;}
 .page1_bottom .title_photo{ position:absolute; width:250px; height:250px; border-radius:100%; top:-125px; background:url(../img/photo.jpg) no-repeat; background-size:100%; left:50%; margin-left:-135px; border:10px solid #1e243a;}
 
-.page2_text{ float:left; width:70%; height:100%;  padding-top:5%;}
+
 .job_details{ float:left; color:#fff; width:70%;}
 .job_times{ float:right; color:#2bfdd6; width:20%; padding-left:5%;}
 .job_times>i{ border-left:2px solid #cacaca; margin-left:7px; height:28px; display:block;}
@@ -84,9 +98,8 @@ body{ overflow:hidden;}
 
 
 
-.page4_text{ float:left; width:60%; height:100%; color:#fff;}
-.page4_text p{ line-height:27px; padding-top:30px; text-indent:2em;}
-.page4_title{ float:right; width:30%; height:100%; padding-top:10%;}
+
+
 
 #page5 .area{position:relative;}
 .weixin{ position:absolute; width:300px; height:350px; top:50%; left:50%; margin-left:-150px; margin-top:-175px; background:url(../img/wixin.png) no-repeat top center; background-size:100%;}
