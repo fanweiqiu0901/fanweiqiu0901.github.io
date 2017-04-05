@@ -99,7 +99,7 @@ body{ overflow:hidden;}
 .page3_title{ text-align:center; padding-top:5%; height:20%;}
 .page3_demo{ width:100%; overflow:hidden; height:70%; margin-bottom:10px;}
 .page3_box{ width:95%; position:relative;}
-.page3_box_chd{ position:absolute; top:0; left:0;}
+.page3_box_chd{ position:absolute; top:0; left:0; width:100%;}
 .page3_bar{ float:right; width:1%; height:100%; background:#eee; opacity:0.5; position:relative;}
 .page3_bar_chd{ position:absolute; height:10%; width:100%; background:#999;}
 
