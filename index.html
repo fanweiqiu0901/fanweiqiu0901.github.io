@@ -1,156 +1,364 @@
-﻿<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<link href="css/css.css" rel="stylesheet" />
-<script src="js/js.js"></script>
-<script src="js/move.js"></script>
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="./style/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style/index.min.css" type="text/css" rel="stylesheet">
+    <script src="./style/jquery.min.js"></script>
+
+
+    <link href="./style/animate.min.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .po-bg {
+            background-color: #f2f2f2;
+            width: 255px;
+            height: 454px;
+            position: absolute;
+            top: 180px;
+            left: 31px;
+        }
+
+        .delay_1 {
+            -webkit-animation-delay: 200ms;
+            -o-animation-delay: 200ms;
+            animation-delay: 200ms;
+        }
+
+        .delay_2 {
+            -webkit-animation-delay: 400ms;
+            -o-animation-delay: 400ms;
+            animation-delay: 400ms;
+        }
+
+        .delay_3 {
+            -webkit-animation-delay: 600ms;
+            -o-animation-delay: 600ms;
+            animation-delay: 600ms;
+        }
+
+        .animateUpDown {
+            -webkit-animation-name: animateUpDown;
+            -o-animation-name: animateUpDown;
+            animation-name: animateUpDown;
+            -webkit-animation-duration: 900ms;
+            -o-animation-duration: 900ms;
+            animation-duration: 900ms;
+        }
+
+        @-webkit-keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            40% {
+                -webkit-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @-o-keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            40% {
+                -webkit-transform: translateY(-20%);
+                -o-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            40% {
+                -webkit-transform: translateY(-20%);
+                -o-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        .animateUp {
+            -webkit-animation-name: animateUp;
+            -o-animation-name: animateUp;
+            animation-name: animateUp;
+            -webkit-animation-duration: 500ms;
+            -o-animation-duration: 500ms;
+            animation-duration: 500ms;
+            -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+        }
+
+        @-webkit-keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @-o-keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                -o-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                -o-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+
+
+        .cur .ShowBgUp {
+            -webkit-animation-name: ShowBgUp;
+            -o-animation-name: ShowBgUp;
+            animation-name: ShowBgUp;
+            -webkit-animation-duration: 1400ms;
+            -o-animation-duration: 1400ms;
+            animation-duration: 1400ms;
+            -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+        }
+
+        @-webkit-keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .move .ShowBgUp {
+            opacity: 1;
+            z-index: 9;
+        }
+
+        .cur .ShowBgUp {
+            z-index: 10;
+        }
+
+        #banner .banner-item:nth-child(1) .banner-img {
+            background-image: url(./style/111.jpg);
+        }
+
+        #banner .banner-item:nth-child(2) .banner-img {
+            background-image: url(./style/222.jpg);
+        }
+
+        @media (-webkit-min-device-pixel-ratio:2) {
+            #banner .banner-item:nth-child(1) .banner-img {
+                background-image: url(./style/111.jpg) !important;
+            }
+
+            #banner .banner-item:nth-child(2) .banner-img {
+                background-image: url(./style/222.jpg) !important;
+            }
+        }
+
+       
+        .banner .banner-item .banner-text > div{
+            margin-top:15%\9;/*兼容IE6 IE7 IE8*/
+        }
+         .original-shape{
+            margin:auto;
+            margin-top: 18%\9;
+        }
+    </style>
 </head>
+<body style="min-width:1366px;">
+  
+	<nav class="navbar navbar-default navbar-fixed-top u-navbar">
+        <div class="container">
+		<div class="row">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-pc-div">
+                        申请表单
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+            
+                <ul class="nav navbar-nav">
 
-<body>
+                     <li class="click"><a>首页</a><p class="line-top"></p></li>	
+                    
+                    <li><a>招聘信息</a></li>
+      	
+                </ul>
 
-<div id="wrap">
-    <section id="page1" class="page">
-    	<div class="page1_top_bg">
-            <div class="area">
-                <div class="page1_top">
-                    <img src="img/title_logo.png" />
+                <div id="downappform" class="navbar-form navbar-right" style="margin-right:0;">
+					
+					<a class=" memberzhuc model-down" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-sm">登入 / 注册</a>
                 </div>
+				
             </div>
-        </div>
-        <div class="page1_bottom_bg">
-        	<div class="area">
-            	<div class="page1_bottom">
-                    <div class="title_photo"></div>
-                    <div class="title_text"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="page2" class="page" style="background:#192233;">
-   		<div class="area clearfix">
-        	<div class="page2_text" id="page2_text">
-            	<div class="clearfix">
-                	<div class="job_details">
-                    	<h2 class="company_name">上海鲁班软件股份有限公司（前端开发工程师）</h2>
-                        <h2 class="time">2016.06 - 至今</h2>
-                        <p class="text">公司官网鲁班软件（www.lubansoft.com）、鲁班数据（www.lubandata.com）改版页面制作;
-                                        负责公司内部员工办公系统（www.myluban.com）更新改版、日常维护、新功能开发;
-                                        技能：jQuery、Bootstrap、ajax、html+css、javascript、
-                                        软件：photoshop、illustrator;
-                                        </p>
-                    </div>
-                    <div class="job_times">
-                    	<i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <b>2016</b>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <i class="br"></i>
-                    </div>
-                </div>
-                <div class="clearfix">
-                	<div class="job_details">
-                    	<h2 class="company_name">农工商（超市）集团（网页制作）</h2>
-                        <h2 class="time">2012.10-2016.04</h2>
-                        <p class="text">负责公司旗下电商网站 （www.chblt.com）、手机APP（便利通）、微信商城（农工商超市便利通网） 、酒店官网（www.stnoah1699.com）等页面的日常维护、更新、页面制作以及设计。</p>
-                    </div>
-                    <div class="job_times">
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <b>2013</b>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                    </div>
-                </div>
-                <div class="clearfix">
-                	<div class="job_details">
-                    	<h2 class="company_name">上海青桐网络技术有限公（平面设计实习生）</h2>
-                        <h2 class="time">2012.03-2012.09</h2>
-                        <p class="text">负责天猫旗舰店店铺活动页面、宝贝描述、首页广告图片的设计制作;(旗下商品包含小林日化、i-baby、丝蓓绮等)</p>
-                    </div>
-                    <div class="job_times">
-                        <i class="br"></i>
-                        <i></i>
-                        <b>2012</b>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                        <i class="br"></i>
-                        <i></i>
-                    </div>
-                </div>
-            </div>
-            <div class="page2_title title_style">
-            	<span>工作<br>经历<o></o></span>
-            </div>
-        </div>
-    </section>
-    <section id="page3" class="page" style="background:#1e243a;">
-    	<div class="area">
-        	<div class="page3_title title_style">
-        		<span>部分作品<o></o></span>
-            </div>
-            <div class="page3_demo" id="page3_demo">
-            	<div class="page3_box" id="page3_box">
-                	<div class="page3_box_chd" id="page3_box_chd">
-                        <ul class="demo_ul">
-                             <li><span><a href="http://www.lubansoft.com/" target="_blank">鲁班软件官网页面</a></span><a href="http://www.lubansoft.com/" target="_blank"><img src="img/lbrj.png" /></a></li>
-                             <li><span><a href="http://www.myluban.com/" target="_blank">myluban公司管理系统</a></span><a href="http://www.myluban.com/" target="_blank"><img src="img/mlb.png" /></a></li>
-                             <li><span><a href="qqmusic-index/index.html" target="_blank">仿QQ音乐页面布局</a></span><a href="qqmusic-index/index.html" target="_blank"><img src="img/qqmusic.png" /></a></li>
-                             <li><span><a href="web-index/index.html" target="_blank">移动端页面</a></span><a href="web-index/index.html" target="_blank"><img src="img/web.png" /></a></li>
-                        </ul>
-                        <ul class="demo_ul">
-                            <li><span><a href="http://www.lubandata.com/" target="_blank">鲁班数据官网页面</a></span><a href="http://www.lubandata.com/" target="_blank"><img src="img/lbsj.png" /></a></li>
-                            <li><span><a href="http://www.dsktshop.com/" target="_blank">帝诗卡特官网页面</a></span><a href="http://www.dsktshop.com/" target="_blank"><img src="img/dskt.png" /></a></li>
-                        </ul>
-                        <ul class="demo_ul">
-                       		<li><span><a href="http://www.chblt.com/" target="_blank">便利通官网页面</a></span><a href="http://www.chblt.com/" target="_blank"><img src="img/ngs.png" /></a></li>
-                         	<li><span><a href="yxbj-index/index.html" target="_blank">仿印象笔记订购页面布局</a></span><a href="yxbj-index/index.html" target="_blank"><img src="img/yxbj.png" /></a></li>\
-                        	<li><span><a href="rem-index/index.html" target="_blank">REM布局</a></span><a href="rem-index/index.html" target="_blank"><img src="img/rem.png" /></a></li>
-                           
-                        </ul>
-                    </div>
-                </div>
-                <div class="page3_bar" id="page3_bar">
-                	<div class="page3_bar_chd" id="page3_bar_chd"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="page4" class="page" style="background:#192233">
-    	<div class="area">
-        	<div class="page4_text">
-            	<h2>自我评价</h2>
-            	<p>
-                xxx
-                </p>
-                
-            </div>
-            <div class="page4_title title_style">
-            	<span>个人<br>信息<o></o></span>
-            </div>
-        </div>
-    </section>
-    <section id="page5" class="page" style="background:#1e243a">
-    	<div class="area">
-        	<div class="weixin">
-            	<p>感谢您看完我的简历，请联系我吧 !</p>
-            </div>
-        </div>
-    </section>
 </div>
+        </div>
+    </nav>
+    <!--rev slider start-->
+    <!-- banner begin -->
+    <link rel="stylesheet" type="text/css" href="./style/banner.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+    <div id="banner" class="banner">
+        <div class="banner-item animated banner-item-remove fadeOut delay10" data-classin="fadeIn" data-classout="fadeOut delay10" data-time="400" data-role="out">
+            <div class="banner-img"></div>
+            <div class="banner-text vbox box-h-center box-v-center">
+                <div>
+                    <div class="animated fadeOutUp delay duration5" data-classin="fadeInDown delay5 duration5" data-classout="fadeOutUp delay duration5">
+                        我们的目标是是是是是是是是
+                    </div>
+                    <div data-role="entext" class="animated fadeOutDown delay duration5" data-classin="fadeInUp delay7 duration5" data-classout="fadeOutDown delay duration5">
+                        没有蛀牙牙牙牙牙牙牙牙牙牙
+                    </div>
+                    <div data-role="entext" class="animated fadeOutDown delay duration5" data-classin="fadeInUp delay9 duration5" data-classout="fadeOutDown delay duration5">
+                        <button href="" class="global-btn mtop40 kaijkrs-btn  model-down" data-toggle="modal" data-target=".bs-example-modal-sm">点点点</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-item animated banner-item-cur fadeIn" data-classin="fadeIn" data-classout="fadeOut delay10" data-time="400" data-thumb="/templets/default/banner/img/health-banner2-2x-small.jpg" data-role="in">
+            <div class="banner-img"></div>
+            <div class="banner-text vbox box-h-center box-v-center">
+                <div>
+                    <div class="animated fadeInDown delay5 duration5" data-classin="fadeInDown delay5 duration5" data-classout="fadeOutUp delay duration5">
+                        啦啦啦啦阿拉蕾，啊啊啊啊啊啊啊升级换代
+                    </div>
+                    <div class="animated fadeInRight delay6 duration5" data-margin="margin" data-classin="fadeInRight delay6 duration5" data-classout="fadeOutLeft delay duration5">
+                        啊飒飒撒反对
+                    </div>
+                    <div data-role="entext" class="animated fadeInUp delay7 duration5" data-classin="fadeInUp delay7 duration5" data-classout="fadeOutDown delay duration5">
+                        撒大苏打大苏打实打实大苏打
+                    </div>
+                    <div class="animated fadeInUp delay9 duration5" data-role="entext" data-classin="fadeInUp delay9 duration5" data-classout="fadeOutDown delay duration5">
+                        <button href="" class="global-btn mtop40 kaijkrs-btn  model-down" data-toggle="modal" data-target=".bs-example-modal-sm">点点点</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="banner-prev"> 
+        </div>
+        <div class="banner-next"> 
+        </div>
+    </div>
 
 
-</body>
-</html>
+    <!--scripts and plugins -->
+    <!--must need plugin jquery-->
+    <script type="text/javascript" src="./style/banner.js"></script>
+    <script type="text/javascript">
+        $("#banner").THBanner({ timer: 5000 });
+    </script>
+    <!-- banner end -->
+    <div class="container">
+        <div class="title-comm-tuhuan">
+            <h3 class="welinain">xxx信息</h3>
+            <p class="line lineheight"></p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh <span style="padding:0 0 0 40px;">2017/12/12</span></p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh <span style="padding:0 0 0 40px;">2017/12/12</span></p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh <span style="padding:0 0 0 40px;">2017/12/12</span></p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh <span style="padding:0 0 0 40px;">2017/12/12</span></p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="title-comm-tuhuan">
+            <h3 class="welinain">xxx信息</h3>
+            <p class="line lineheight"></p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>aaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh</p>
+        </div>
+    </div>
+    <div style="width:100%; background:#2B2F38">
+		<div style="height:50px; line-height:50px; text-align:center; color:#efefef;">脚脚脚脚脚脚脚脚脚脚脚脚脚</div>
+    </div>
+
+
+
+</body></html>
