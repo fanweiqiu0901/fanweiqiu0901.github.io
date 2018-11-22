@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Londrina+Outline|Londrina+Solid" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/swing.css" />
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e, t = document.createElement("style");
+      return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS
+        .supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+</head>
+
+<body class="demo-swing" style="background-color:#1F1F1F">
+  <main>
+    <section class="content content--layout" style="height:300px;">
+      <h2 class="word word--swing">方诗亚</h2>
+      <span id="div" class="word word--swing"></span>
+    </section>
+  </main>
+  <script>
+    //两个时间相差天数 兼容firefox chrome
+    function datedifference(sDate1, sDate2) { //sDate1和sDate2是2006-12-18格式  
+      var dateSpan,
+        tempDate,
+        iDays;
+      sDate1 = Date.parse(sDate1);
+      sDate2 = Date.parse(sDate2);
+      dateSpan = sDate2 - sDate1;
+      dateSpan = Math.abs(dateSpan);
+      iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
+      return iDays
+    };
+    var myDate = new Date();
+    alert(myDate.toLocaleString())
+    var oDiv = document.getElementById("div");
+    oDiv.innerHTML = datedifference("2018-11-22", "2018-06-22") + "天";
+  </script>
+  <script src="js/charming.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/demo4.js"></script>
+</body>
+
+</html>
